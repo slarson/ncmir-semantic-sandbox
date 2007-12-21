@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<graphml xmlns='http://graphml.graphdrawing.org/xmlns'>
+  <graph>
+    <key attr.type='string' id='group' for='node' attr.name='group'/>
+    <node id='0'>
+      <data key='name'>V</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='1'>
+      <data key='name'>IOma</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='2'>
+      <data key='name'>PAG</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='3'>
+      <data key='name'>LING</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='4'>
+      <data key='name'>SIM</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='5'>
+      <data key='name'>PRNc</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='6'>
+      <data key='name'>RT</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='7'>
+      <data key='name'>IOda</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='8'>
+      <data key='name'>PRP</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='9'>
+      <data key='name'>CUL4</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='10'>
+      <data key='name'>RM</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='11'>
+      <data key='name'>RN</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='12'>
+      <data key='name'>PYR</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='13'>
+      <data key='name'>VII</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='14'>
+      <data key='name'>NIS</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='15'>
+      <data key='name'>LAV</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='16'>
+      <data key='name'>DEC</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='17'>
+      <data key='name'>PCG</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='18'>
+      <data key='name'>UVU</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='19'>
+      <data key='name'>PG</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='20'>
+      <data key='name'>VI</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='21'>
+      <data key='name'>PO</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='22'>
+      <data key='name'>TRN</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='23'>
+      <data key='name'>CENT3</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='24'>
+      <data key='name'>CENT2</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='25'>
+      <data key='name'>x</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='26'>
+      <data key='name'>LRN</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='27'>
+      <data key='name'>MT</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='28'>
+      <data key='name'>MV</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='29'>
+      <data key='name'>CBX</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='30'>
+      <data key='name'>ANcr2</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='31'>
+      <data key='name'>ANcr1</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='32'>
+      <data key='name'>SUV</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='33'>
+      <data key='name'>FL</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='34'>
+      <data key='name'>FN</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='35'>
+      <data key='name'>LGvm</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='36'>
+      <data key='name'>NR</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='37'>
+      <data key='name'>SPIV</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='38'>
+      <data key='name'>DNC</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='39'>
+      <data key='name'>CB</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='40'>
+      <data key='name'>IOpr</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='41'>
+      <data key='name'>R</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='42'>
+      <data key='name'>CUL5</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='43'>
+      <data key='name'>FOTU</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='44'>
+      <data key='name'>HEM</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='45'>
+      <data key='name'>NTS</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='46'>
+      <data key='name'>NOD</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='47'>
+      <data key='name'>SC</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='48'>
+      <data key='name'>z</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='49'>
+      <data key='name'>DN</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='50'>
+      <data key='name'>AMBd</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='51'>
+      <data key='name'>DT</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='52'>
+      <data key='name'>LC</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='53'>
+      <data key='name'>LT</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='54'>
+      <data key='name'>TM</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='55'>
+      <data key='name'>LP</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='56'>
+      <data key='name'>III</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='57'>
+      <data key='name'>RPO</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='58'>
+      <data key='name'>IP</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='59'>
+      <data key='name'>LGd</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='60'>
+      <data key='name'>IV</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='61'>
+      <data key='name'>IO</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='62'>
+      <data key='name'>LGv</data>
+      <data key='group'>other</data>
+    </node>
+    <node id='63'>
+      <data key='name'>PFL</data>
+      <data key='group'>cb</data>
+    </node>
+    <node id='64'>
+      <data key='name'>y</data>
+      <data key='group'>other</data>
+    </node>
+    <edge source='1' target='43'/>
+    <edge source='1' target='23'/>
+    <edge source='1' target='58'/>
+    <edge source='1' target='12'/>
+    <edge source='1' target='63'/>
+    <edge source='1' target='30'/>
+    <edge source='1' target='31'/>
+    <edge source='1' target='18'/>
+    <edge source='1' target='9'/>
+    <edge source='1' target='24'/>
+    <edge source='1' target='3'/>
+    <edge source='1' target='42'/>
+    <edge source='1' target='16'/>
+    <edge source='1' target='33'/>
+    <edge source='1' target='46'/>
+    <edge source='1' target='4'/>
+    <edge source='2' target='49'/>
+    <edge source='2' target='58'/>
+    <edge source='2' target='34'/>
+    <edge source='5' target='49'/>
+    <edge source='5' target='58'/>
+    <edge source='5' target='34'/>
+    <edge source='5' target='0'/>
+    <edge source='6' target='41'/>
+    <edge source='7' target='43'/>
+    <edge source='7' target='23'/>
+    <edge source='7' target='24'/>
+    <edge source='7' target='12'/>
+    <edge source='7' target='18'/>
+    <edge source='7' target='63'/>
+    <edge source='7' target='9'/>
+    <edge source='7' target='3'/>
+    <edge source='7' target='42'/>
+    <edge source='7' target='16'/>
+    <edge source='7' target='46'/>
+    <edge source='11' target='39'/>
+    <edge source='19' target='39'/>
+    <edge source='19' target='33'/>
+    <edge source='19' target='63'/>
+    <edge source='21' target='49'/>
+    <edge source='27' target='39'/>
+    <edge source='33' target='32'/>
+    <edge source='33' target='1'/>
+    <edge source='33' target='50'/>
+    <edge source='33' target='51'/>
+    <edge source='33' target='17'/>
+    <edge source='33' target='52'/>
+    <edge source='33' target='53'/>
+    <edge source='33' target='8'/>
+    <edge source='33' target='10'/>
+    <edge source='33' target='36'/>
+    <edge source='33' target='56'/>
+    <edge source='33' target='57'/>
+    <edge source='33' target='37'/>
+    <edge source='33' target='22'/>
+    <edge source='33' target='20'/>
+    <edge source='33' target='60'/>
+    <edge source='33' target='14'/>
+    <edge source='33' target='13'/>
+    <edge source='33' target='26'/>
+    <edge source='33' target='27'/>
+    <edge source='33' target='28'/>
+    <edge source='33' target='64'/>
+    <edge source='33' target='25'/>
+    <edge source='33' target='15'/>
+    <edge source='33' target='48'/>
+    <edge source='35' target='41'/>
+    <edge source='39' target='22'/>
+    <edge source='40' target='43'/>
+    <edge source='40' target='23'/>
+    <edge source='40' target='24'/>
+    <edge source='40' target='12'/>
+    <edge source='40' target='18'/>
+    <edge source='40' target='63'/>
+    <edge source='40' target='9'/>
+    <edge source='40' target='3'/>
+    <edge source='40' target='42'/>
+    <edge source='40' target='16'/>
+    <edge source='40' target='46'/>
+    <edge source='44' target='1'/>
+    <edge source='45' target='0'/>
+    <edge source='47' target='49'/>
+    <edge source='47' target='58'/>
+    <edge source='47' target='41'/>
+    <edge source='47' target='38'/>
+    <edge source='47' target='34'/>
+    <edge source='54' target='39'/>
+    <edge source='55' target='49'/>
+    <edge source='59' target='41'/>
+    <edge source='61' target='29'/>
+    <edge source='62' target='39'/>
+    <edge source='62' target='58'/>
+    <edge source='63' target='22'/>
+  </graph>
+</graphml>

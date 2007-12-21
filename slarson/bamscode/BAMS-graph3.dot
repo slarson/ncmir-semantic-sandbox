@@ -1,0 +1,301 @@
+digraph brain {
+graph[size="20,20",ratio=fill, center=1, nodesep=1.5, ranksep=2.5,rankdir=LR];
+ node[fontsize=12];
+PVI -> {LSv; ENT; }
+ENTl -> {NLOT; POST; AI; CA1; RSP; SUB; VTA; RR; PRE; ACA; CLI; OT; TM; SUMm; AUD; BLA; PAR1; PIR; PERI; SUBv; TEv; TR; CP; LA; SNc; PAR6; ECT; IF; PAA; PL; AON; ORB; CA3; RL; PA; PAR5; MO; COAp; ILA; TT; }
+MEA -> {}
+LSr -> {NDB; LPO; MS; SUM; LHA; VTA; LM; DMH; }
+LH -> {PRC; NId; VTA; CLI; DMH; IF; SUMl; NIc; SCH; TM; RL; }
+PRNr -> {PRC; PH; }
+PAGrm -> {PRC; PH; PA; DMH; NId; NIc; }
+B -> {PRC; DMH; }
+PVHmpd -> {PAG; MPN; DMH; DMX; PVT; LHA; }
+BSTju -> {BSTov; RR; BSTfu; MRN; BSTju; CEAm; SI; LHA; LC; BLAp; CA1spd; BSTal; TR; SNr; BSTav; CP; MOs; LA; BSTad; SNc; MDm; BSTsc; PVT; PL; CEAc; BLAa; STN; BMAp; FS; ACAd; ILA; PAGvl; BSTse; AAA; }
+RERd -> {ENTl; ENTm; SUBv; CA1; ACAv; PL; }
+NIc -> {ENTl; LH; RSP; LM; TRN; IPNr; NIc; PH; LHA; SCzo; SCdw; SUMl; VM; DTN; NDB; MS; PCG; MOs; LDT; SNc; ENTm; PRN; IF; CLA; PVT; PL; DMHa; IPNl; CSl; ZI; IOma; DR; PMd; RPO; MH; IPNa; SUB; VTA; PRE; ACA; SCiw; SCdg; PVp; SCig; LPO; SUMm; PAGdl; CSm; CUN; RER; SCop; SCsg; PAR; VTN; CL; MDl; RH; SF; CM; ILA; PAGvl; }
+DMHp -> {PRC; }
+SPVC -> {CM; }
+MDRNv -> {MPN; }
+PT -> {ENTl; SBPV; AIv; ORBm; PMd; ILA; SUBv; PL; SO; SCH; AHA; }
+PH -> {LSr; RSPagl; PVHmpd; DMH; NIc; PVHlp; PVHap; PRC; MPN; NId; PA; PVHmpv; PVHdp; LSv; PVHpv; RER; }
+PD -> {MPN; DMH; }
+LHA -> {MEA; PAG; LSr; LH; RPA; LM; BSTif; MRN; RSPagl; CLI; PVHmpd; NIc; RERv; TM; PT; PH; DMX; NId; BLA; LHA; VMHdm; PB; AHNp; LSv; PIR; SUMl; BSTtr; SNr; ORBvl; NDB; MS; RE; SUM; LA; SNc; IO; VMH; PMv; PRN; CLA; DMH; PVT; PL; AON; MD; VMHc; CEAc; BST; LS; AHN; PA; PVHmpv; MO; ZI; DR; PRP; PMd; RPO; MOp; AI; CS; MM; VTA; SS; PVHap; PRC; MPN; LPO; SI; SUMm; LC; PVHdp; PF; PVHpv; RER; MA; CP; VISC; PPN; AHNc; PVHlp; RM; SF; PO; LD; BMAp; MPO; NTS; ILA; PAGvl; ENT; AAA; SC; AHA; }
+VP -> {DCN; PAG; PO; LC; MRN; SN; IC; RT; SC; RN; }
+VMHdm -> {ENTl; AHNa; PAG; LSr; MM; VTA; RECd; MRN; BSTif; BSTdm; BSTmg; CEAm; TU; RERd; PVHap; ZIda; SCdg; PRC; PSCH; SCig; LPO; SI; SBPV; LHA; PAGdl; RERm; AHNp; CUN; PERI; PIR; BSTtr; MPNl; TR; BSTav; PVHpv; RER; PAGd; PCG; LA; BSTad; COApl; AVP; AHNc; DMH; RECm; PAA; PVT; MEAad; CEAc; BMAp; MPO; ZI; RCH; PMd; PAGvl; AHA; }
+KF -> {DMH; }
+AHNp -> {PVI; AHNa; LH; CA1; MM; MRN; BSTif; RERv; PVHap; SCdg; PVp; PRC; SCig; PH; LPO; PT; SUMm; LHA; VMHdm; SPFm; SUBv; BSTtr; MPNl; MPT; PVa; RER; RERl; BSTad; AHNc; DMH; PVT; PP; DMHa; CA3; VMHc; SF; NPC; MPO; ZI; PMd; PAGvl; }
+LSv -> {PVI; BSTpr; LH; CA1; PAGrm; PVHmpd; PVHam; PVHap; TM; PVp; PRC; PT; MPN; PSCH; AD; PH; SUMm; SBPV; LHA; PVpo; AHNp; PVHdp; SUBv; AVPV; MPNl; PVHpv; PVa; RER; DMHv; BSTad; VMH; ARH; PMv; MEApd; DMH; AHNc; PVT; MPNc; CA3; DMHa; PA; MPNm; PVHmpv; MPO; }
+PIR -> {LS; NDB; ENTl; MA; SI; MS; FS; OT; }
+BSTv -> {PVI; LSr; LH; PRNr; PAGrm; B; RR; MRN; BSTif; CLI; BSTmg; BSTdm; PVHmpd; DMHp; PH; PT; NId; LHA; TMv; SBPV; PVpo; RERm; PVHf; IMD; LSv; SUMl; BSTtr; CEAl; PAGd; PCG; LDT; COM; SNc; MDm; PMv; DMH; IF; BSTsc; PVT; PL; DMHa; CEAc; BSTrh; PVHpml; PVHmpv; ZI; REa; DR; PMd; PAGm; VTA; BSTfu; PRNc; CEAm; PVHam; TU; OT3; PS; SO; PVHap; AMd; PRC; LPO; SI; SUMm; LC; BLAp; PBlc; PVHdp; PVHpmm; BSTal; RECp; BSTav; PVHpv; DMHv; RERl; BSTad; ARH; MEPO; PPN; AHNc; AVP; PVHlp; MEAad; BLAa; RH; CM; MPO; BMAp; SFO; RCH; PAGvl; BSTcc; AHA; }
+SUMl -> {ENTl; LH; LSr; CA1; SUB; PRE; PAR; CA3sp; ACA; PAR6; ENTm; DMH; NIc; CA3; LS; MPN; NId; LC; LSv; CA3so; CA3slm; ENT; RER; }
+R -> {AHNa; MEA; LT; MT; AV; IGL; SO; MPN; LPO; SCig; AD; PBG; SBPV; APN; LHA; PPT; LP; LGvl; LGd; PRT; NDB; MA; OP; SCop; SCsg; AVP; LGvm; BST; LGv; LD; MPO; ICe; NOT; RCH; SCH; SC; AHA; }
+MPT -> {RER; }
+ORBvl -> {MDl; NId; SI; CP; RSPagl; GP; NIc; }
+SUM -> {AD; SF; PVHmpv; AV; PMv; PVHdp; PVHmpd; ATN; ILA; TT; PVHlp; PVHpv; RER; }
+PCG -> {MPN; PH; DMH; NId; NIc; }
+COM -> {PH; }
+MOB -> {PIR; MA; SI; ILA; TT; SO; }
+VMHvl -> {ENTl; PAG; LSr; MRN; BSTif; BSTmg; BSTdm; PH; PSCH; PT; SBPV; LHA; LSv; PIR; SUMl; BSTtr; TR; RE; LA; COM; PMv; MEApd; IF; DMH; PP; PVT; PL; CEAc; DMHa; BST; RL; AHN; ZI; PMd; VTA; MM; CEAm; TU; PVHap; SCdg; PRC; SCig; LPO; MPN; SUMm; SI; LC; CUN; PERI; MPNl; BSTal; BSTav; RER; BSTad; CL; AHNc; AVP; SPFp; MPO; ACAd; ILA; RCH; PAGvl; AHA; }
+PMv -> {PVI; BSTpr; ENTl; LSr; CA1; PAGrm; B; MM; BSTif; PVHmpd; CEAm; TU; PBl; PVHap; TM; PVp; PT; PH; SUMm; PVpo; BLAp; IPNi; PVHdp; LSv; SUMl; BSTv; SUBv; BSTtr; AVPV; MPNl; TR; PVa; BSTav; PVHpv; RER; RE; PCG; LDT; BSTad; MDm; PMv; ARH; VMHvl; MEApd; ENTm; DMH; PVT; PL; PVHlp; MEAad; CEAc; MPNm; PA; BMAp; PVHmpv; MPO; ZI; COApm; DR; ILA; PMd; PAGvl; }
+MEApd -> {PVI; ENTl; BSTpr; CA1; SUB; MM; MEAav; BSTmg; TU; PVp; MPN; PH; SUMm; SI; ENTMv; VMHdm; BSTd; CA3sr; PERI; LSv; SUMl; SUBv; AVPV; MPNl; TR; PVa; BSTad; PMv; PAR; VMHvl; ARH; ENTm; COApl; AHNc; PAA; MPNc; MEAad; CEAc; MEApv; PA; MPNm; MPO; COApm; ILA; BSTdl; }
+DMH -> {IPNc; PVI; LH; RPA; CA1; B; RR; MRN; BSTif; BSTdm; PVHmpd; RERv; PH; PSCH; PT; PD; SBPV; TMv; LHA; RERm; PVpo; PVHf; AHNp; SUMl; BSTv; BSTtr; PCG; MDc; BSTsc; PVT; PL; CEAc; DMHa; PVHmpv; DR; AP; SCH; AHNa; VTA; MM; BSTfu; CEAm; PVHam; TU; SO; PS; PVHap; SCdg; PRC; PVp; ADP; TMd; LPO; SI; SUMm; PBlc; CUN; CSm; PVHdp; NTSm; SUBv; PVHpmm; AVPV; MPNl; PVHpv; PVa; BSTav; RER; DMHv; BSTad; MEPO; ARH; AHNc; AVP; PVHlp; CA3; RH; MDl; MPO; BMAp; SFO; RCH; PAGvl; }
+PP -> {PMd; RER; }
+PVT -> {ENTl; LSr; SUB; AIv; AIp; ENTm; AId; DMH; ACAv; PL; TM; LGv; MPN; PA; SUBv; PMd; RT; SCH; AHA; RER; }
+AON -> {}
+CEAc -> {BSTrh; BSTov; LHA; BSTad; BSTfu; BSTmg; BSTdm; DMH; BSTsc; BSTv; BSTtr; BSTal; BSTav; }
+PGRNl -> {LSr; ARH; PVHmpd; DMH; PVT; SO; PVHlp; PVHap; PVHpml; DMX; LC; PVHmpv; NTS; PVHdp; PVHpv; }
+PVHmpv -> {PAG; DMX; PPN; DMH; PVT; }
+AP -> {PGRNl; }
+RA -> {CM; }
+SCH -> {PVI; PAG; PVHmpd; TU; IGL; PVHap; PT; ADP; MPN; PH; SBPV; LHA; PVpo; PVHdp; LSv; AVPV; PVa; PVHpv; RER; MS; RE; VMH; MEPO; ARH; AVP; DMH; PVT; BST; LS; LGv; RH; AHN; PVHmpv; MPO; ZI; RCH; AHA; }
+VISam -> {MOp; MOs; RSP; SSs; AIp; VISal; RSPd; SSp; VISlm; PO; AUD; LP; LD; VISp; LGd; VM; VISam; }
+MOp -> {MOp; RSP; CS; AIp; RSPagl; ACA; AId; TRN; TM; PT; VAL; AUD; BLA; VP; LP; ORBl; SMT; PF; RT; SNr; VM; ORBvl; PG; MOs; CP; SSs; CL; SSp; CLA; PVT; AON; ORB; MD; PO; IAM; STN; CM; MPO; ZI; FS; VISp; DR; ENT; PSV; SC; }
+VTA -> {LH; MEA; LSr; MT; GPm; CS; VTA; ACA; RSPagl; CLI; OT; PS; PRC; PH; LPO; MPN; SI; LHA; LC; PB; SN; VM; DTN; NDB; MA; RE; CP; LDT; LA; AIv; VTN; AVP; MD; BST; LS; SF; PA; CM; STN; MPO; ZI; DR; ENT; AHA; }
+CS -> {NDB; LSr; MA; RSP; VTA; VMH; ARH; PMv; MRN; RSPd; TRN; DMH; ORB; MPN; RSPv; CUN; ZI; SMT; SC; }
+AId -> {NDB; MOp; PERI; GP; MS; SI; CP; AIp; FS; }
+PRNc -> {PAG; CS; RR; VTA; MRN; PRNc; CLI; V; IPN; LPO; PH; LHA; APN; FF; PB; CUN; SMT; PF; MPT; SUM; PG; SNc; CL; PPN; PVT; DN; RH; LGv; CM; ZI; III; DR; SC; }
+CEAm -> {PRC; PA; BSTrh; LHA; BSTov; BSTad; BSTfu; BSTdm; BSTmg; BSTsc; BSTtr; BSTal; BSTav; }
+PVHam -> {}
+SPF -> {PAG; SN; SPF; PP; POL; MG; PRT; }
+IGL -> {LGv; PRC; PH; LPO; APN; LHA; LD; LGd; RCH; IGL; RT; SCH; AHA; }
+TU -> {ENTl; PVI; LSr; B; BSTif; MRN; BSTdm; PVHmpd; BSTmg; RERv; PT; PSCH; PH; SBPV; LHA; AHNp; PIR; SUMl; BSTtr; TR; PAGd; PCG; COM; PMv; VMHvl; MEApd; IF; BSTsc; PVT; PL; VMHc; DMHa; CEAc; RL; BSTrh; PVHmpv; ZI; MM; CEAm; PVHap; SCdg; PRC; SCig; SUMm; SI; PVHdp; PERI; MPNl; BSTal; PVa; PVHpv; BSTav; DMHv; BSTad; ARH; CL; AVP; AHNc; MEAad; SPFp; MPO; ILA; PAGvl; }
+PS -> {PVI; MEA; LSr; LH; B; LM; BSTmg; CLI; PVHmpd; BSTdm; DMHp; PSCH; PH; LHA; SBPV; TMv; PVpo; PVHf; BSTv; SUMl; RE; PCG; LDT; OV; BSTsc; DMH; IF; PVT; CEAc; DMHa; BST; RL; LS; AHN; PVHpml; PVHmpv; ZI; DR; CS; VTA; MM; BSTfu; CEAm; PVHam; SO; PVHap; PRC; PVp; ADP; LPO; TMd; SI; SUMm; LC; PVHdp; BSTal; PVHpmm; MPNl; BSTav; PVHpv; PVa; DMHv; PG; ARH; MEPO; CL; PVHlp; SF; MPO; SFO; PAGvl; }
+RN -> {CB; }
+LPO -> {PAG; LSr; LH; MEA; IAD; LM; RSPagl; CLI; PVHmpd; NIc; PT; PH; NId; LHA; CA1so; LSv; SUMl; RT; SNr; NDB; MS; SUM; SSs; MOB; VMH; PMv; DMH; PVT; AON; MD; RL; BST; LS; RSPv; PVHmpv; MO; DR; PMd; TT; MH; MM; CS; VTA; RECd; RSPd; OT; SS; PBl; SO; PVHap; PRC; MPN; SUMm; CSm; PVHdp; CA3so; PF; MPNl; PVHpv; RER; COA; CP; VISC; CL; SSp; PPN; PVHlp; RM; MDl; SF; CM; AAA; }
+AUD -> {MOp; ICd; CM; ENT; TEv; ORB; ICe; AIp; PAR; }
+PBlc -> {PH; DMH; PMd; }
+PIR3 -> {PPN; }
+LGvl -> {PRC; PH; }
+SUBv -> {ENTl; LH; LSr; PAGrm; LM; BSTif; BSTmg; BSTdm; TM; PT; PH; TMv; SBPV; BSTd; LSv; BSTv; BSTtr; CEAl; RE; VMH; VMHvl; PMv; DMH; CLA; PVT; PAA; MMme; AON; NLOT1; PL; CEAc; MEApv; VMHc; BST; NLOT3; LS; PA; IAM; FS; AM; PMd; TT; AONpv; AI; MM; ORBm; CEAm; OT; PVp; TMd; MPN; SUMm; IA; BLAp; PERI; AVPV; MPNl; BSTav; RER; BSTad; PAR; ARH; AONm; COApl; MEAad; SF; MPNm; MPO; PIR2; COApm; RCH; ILA; ENT; BSTdl; NLOT2; }
+MPNl -> {PVI; BSTpr; LSr; LH; CS; VTA; MRN; PRNc; PVHmpd; TU; PS; SO; PVHap; TM; PRC; PVp; ADP; LPO; PH; PD; SI; SUMm; LHA; LC; PVpo; PBlc; PVHdp; LSv; PBld; SUMl; PVHpv; PVa; PAGd; RE; SUM; LDT; ARH; PMv; VMHvl; CL; MEApd; AVP; DMH; IF; PPN; PP; PVT; PVHlp; RM; BST; PGRNl; AHN; PA; SPFp; MPO; PVHmpv; ZI; NTS; DR; PAGvl; RPO; }
+BSTav -> {PRC; DMH; }
+MA -> {NDB; COA; MEA; LH; PAG; MA; MS; VTA; MOB; BMA; PPN; OT; AON; MD; PH; LPO; LHA; LC; PIR3; SUMl; TT; }
+AMv -> {RSPagl; }
+PG -> {PFL; OP; LT; MT; MOs; APN; RSP; SNc; VTA; VISp; NOT; CB; FL; SNr; SC; }
+ARH -> {LSv; MPN; DMH; SO; SCH; AHA; }
+MEPO -> {PVI; PAGrm; MM; BSTfu; LM; MRN; BSTdm; BSTmg; PVHmpd; CEAm; TU; PVHam; SO; PS; PVHap; DMHp; PVp; PH; LPO; MPN; ADP; PSCH; TMd; SI; LHA; SBPV; TMv; PVpo; PBlc; PVHf; CSm; PVHdp; BSTv; PVHpmm; PVHpv; PVa; RER; DMHv; PCG; RE; ARH; PPN; BSTsc; DMH; AVP; PVT; PVHlp; DMHa; PVHpml; PVHmpv; MPO; ZI; DR; SFO; RCH; PAGvl; BSTdl; }
+PAR -> {ENTl; POST; SUM; CA1; RE; RSP; SUB; AV; PRE; PAR; ENTm; CLA; CA3; RSPv; AD; SF; BLA; LC; LD; SUMl; SUBv; ENT; RA; }
+COApl -> {ENTl; LSr; SUB; MM; AIp; AId; BSTif; BSTmg; BSTdm; TU; PT; SI; BLA; BSTd; PIR; LSv; PERI; CA3slm; BSTv; SUBv; BSTtr; CA1sp; BSTal; MPNl; TR; BSTav; LA; BSTad; MDm; AIv; PMv; VMHvl; BMA; MEApd; ECT; CLA; PVT; MEAad; CEAc; AHN; PA; MPO; CA1slm; FS; ILA; BSTdl; }
+VISal -> {LGv; SCig; APN; LP; RSP; SSs; LD; PRE; ZI; VISp; SGN; SSp; LGd; RT; VISlm; VISam; }
+BLAa -> {ENTl; SUM; CA1; }
+MDl -> {MOs; AIv; RSPagl; ACA; ACAd; RT; ACAv; PL; ORB; ORBvl; }
+CM -> {ACA; SN; PL; }
+BMAp -> {ENTl; MEA; LSr; BMAa; CA1; AUDd; BSTdm; BSTmg; PH; SBPV; LHA; VMHdm; PIR; SUMl; BSTv; BSTtr; TEv; TR; LA; AUDv; AIv; MDm; VMHvl; ENTm; ECT; BSTsc; PVT; PAA; PL; CEAc; VMHc; NLOT3; AHN; BSTrh; PAR2; FS; PMd; AONpv; SUB; MM; AIp; AId; OT; CEAm; TU; SS; ENTMv; SI; BLAp; PAR1; PERI; SUBv; BSTal; AUDp; BSTav; CP; BSTad; VISC; COApl; MEAad; CA3; VMHa; PTLp; COApm; RCH; ILA; AAA; BSTdl; }
+VPLpc -> {VISC; }
+POR -> {ICc; ICe; }
+GP -> {CP; ORB; TM; }
+ENT -> {SUBd; NDB; POST; SUM; CA1; RE; MOs; LA; SUB; VTA; PRE; PAR; RSPd; PL; ORB; CA3; RSPv; SI; SF; BLA; LP; VP; LD; ILA; ENT; }
+ORBv -> {OT; CP; }
+PAG -> {LH; RPA; CU; MRN; PH; PBG; LHA; PB; IMD; SNr; ORBvl; NDB; LDT; SNc; VMH; PRN; DMH; PVT; ACAv; PL; BST; PGRNl; IAM; ZI; ICe; PGRN; DR; PRP; PMd; RPO; SCH; LT; MT; VTA; CS; ACA; SGN; ORBm; SO; LPO; MPN; SI; APN; LC; CSm; CUN; GRN; SN; MDRN; MA; CP; RO; ARH; CL; PPN; AVP; RM; LGv; CM; MPO; NTS; ILA; AHA; }
+POST -> {SUBd; ENTl; POST; MS; CA1; RE; SUM; RSP; CS; AV; PRE; LM; PAR; ACA; RSPd; CLA; AD; RSPv; LP; LC; LD; PAR1; VISp; DR; RT; ENT; }
+HEM -> {IOma; }
+CA1 -> {AHNa; ENTl; LSr; POST; AONpv; CA1; SUB; MM; PRE; ORBm; TU; PVHam; PT; PH; LPO; ADP; SI; BLA; SBPV; LHA; TMv; AHNp; LSv; PERI; SUMl; AVPV; COA; MS; LA; MOB; AONm; PAR; PMv; ENTm; DMH; AHNc; PVT; AON; PL; CA3; VMHc; BST; VMHa; LS; RSPv; IAM; SF; PA; PVHpml; MPO; ZI; RCH; ILA; PMd; ENT; TT; AHA; }
+RSP -> {POST; SUB; RSP; CS; PRE; AV; MRN; ACA; SS; LPO; AD; SI; LHA; LP; LC; VP; RT; VM; NDB; MA; MS; RE; MOs; LDT; PAR; CL; CLA; ACAv; PL; ILM; ORB; MD; RH; LD; MO; ZI; VISp; DR; GP; ACAd; AM; ILA; ENT; }
+IPNr -> {NIc; }
+LRN -> {}
+MV -> {DTN; MT; }
+TM -> {LS; SUBd; LH; MPN; PA; SUM; LC; PRE; ACA; SUBv; ILA; ENT; }
+FF -> {PH; }
+PB -> {MPN; CM; VISC; VTA; AIp; }
+PPT -> {PH; ORB; }
+AHNd -> {PRC; DMH; PMd; RER; }
+TR -> {BSTov; CA1; SUB; BSTad; BSTfu; BSTdm; BSTsc; BSTju; TU; BSTrh; ENTMv; PERI; CA3slm; BSTal; BSTav; }
+PRT -> {LGv; LGvl; PO; PBG; MT; }
+DTN -> {LH; PAG; MEA; CA1; SUB; CS; VTA; LM; AV; ACA; IPN; LPO; MPN; PBG; APN; LP; MARN; SMT; LGd; SN; DTN; NDB; MS; RE; SUM; OP; CL; PP; PL; CA3; MD; RL; LS; LGv; CM; LD; PRP; }
+VMH -> {MPO; PVHmpv; PVHdp; PVHmpd; PVHlp; PVHpv; SCH; PVHap; AHA; }
+MDm -> {AId; ORBm; ILA; RT; PL; ORBl; AIv; }
+OV -> {DMH; SO; }
+PAA -> {AHN; CA1; PAR2; VMHdm; SUB; VMHvl; BSTif; BSTdm; BSTtr; BSTal; CA3; }
+PL -> {ENTl; LH; PAG; RPA; CA1; RSP; RR; B; RSPagl; MRN; SLC; NIc; IPN; TM; AD; PT; PH; NId; LHA; BLA; LP; IMD; PIR; RT; SNr; CEAl; ORBvl; VM; NDB; MS; SUM; MOs; RE; PCG; LDT; LA; SNc; MDc; AIv; MDm; BMA; PRN; CLA; IF; DMH; PVT; ACAv; AON; PL; BST; RL; LS; IAM; ZI; FS; DR; AM; PMd; RPO; TT; SUBd; AI; VTA; MM; CS; AV; AIp; PRE; AId; ACA; ORBm; OT; PRC; LPO; SI; VAL; LC; CUN; CSm; PERI; PF; SUBv; RER; AMBd; PG; CP; RO; CL; PPN; VPL; ORB; RM; MDl; RH; PO; CM; MPO; LD; NTS; ACAd; VPM; ENT; SC; AHA; }
+BA -> {PA; }
+MEApv -> {ENTl; PVI; BMAa; CA1; PAGrm; MEAav; BSTif; BSTdm; BSTmg; PH; LHA; SBPV; VMHdm; AHNp; PIR; BSTv; SUMl; BSTtr; TR; NDB; MS; LA; VMHvl; PMv; ENTm; MEApd; DMH; CLA; PAA; PVT; PL; BA; VMHc; CEAc; PA; DR; PMd; AHNa; BSTpr; PAGm; MM; AIp; TU; PVHap; PVp; SI; ENTMv; SUMm; SUBv; MPNl; BSTav; RERl; BSTad; PAR; COApl; AHNc; MEAad; MPNm; MPO; BMAp; COApm; RCH; ILA; AAA; BSTdl; }
+DMHa -> {PRC; LSv; }
+LS -> {SUMm; SBPV; SNc; MPO; VTA; CLI; SUMl; IF; SCH; AHA; TM; RL; }
+BSTrh -> {PVI; LH; PRNr; BSTov; B; MRN; PVHmpd; BSTmg; BSTdm; BSTju; PBlex; RERd; LTN; OT1; PH; MDRNv; DMX; LHA; KF; LSv; SUMl; BSTv; PAGd; NDB; PCG; LDT; PMv; PRN; IF; PVT; CEAc; PBmm; PGRNl; IAM; PARN; PVHmpv; ZI; VTA; BSTfu; PRNc; RECd; AId; CEAm; PVHam; TU; OT3; NTSl; SO; PVHap; LPO; NTSge; MPN; ENTMv; SI; PAGdl; PBlc; PIR3; CA1spd; BSTal; BSTav; PBme; AMBd; MA; DMHv; NTSce; AONm; ARH; AVP; TTv3; RH; CM; BMAp; BMAa; RR; BSTif; V; CLI; CA1sps; PBli; PVHf; XII; IMD; PBld; BSTtr; TR; CEAl; SNr; NTSco; SNc; MDm; OV; BSTsc; PL; DMHa; RL; PA; ND; PVHpml; FS; DR; EW; OT2; AMBv; PBmv; PAGm; MDRNd; VII; PBlv; MEV; LC; BLAp; GRN; AVPV; PVHpv; ACVII; BSTad; PPN; CA1sr; PVHlp; PBle; SF; SPFp; MPO; PBls; RCH; ILA; AAA; PAGvl; BSTdl; ISN; AHA; }
+PA -> {ENTl; BSTpr; CA1; PAGrm; SUB; MM; BSTmg; OT; TU; TM; PVp; PH; MPN; PT; PD; ENTMv; SI; VMHdm; BLAp; BSTd; CA3sr; LSv; PERI; SUBv; TR; CA1sp; MPNl; AVPV; BSTav; BSTad; MDm; VMHvl; PMv; MEApd; ENTm; DMH; MPNc; PVT; MEAad; AHN; MPNm; MPO; BMAp; COApm; CA1slm; ILA; PMd; }
+MO -> {IO; }
+FS -> {PPN; }
+TTd2 -> {DMH; }
+DR -> {IPNc; MOp; LSr; AI; CA1; VTA; BSTif; ACA; ORBm; CEAm; OT; NIc; PVp; LPO; PH; TMd; MPN; SUMm; IPNi; CSm; SUBv; BSTtr; MPNl; ORBvl; MOs; RE; MDm; IF; DMH; PVT; PL; ACAv; PA; BMAp; COAp; DR; ACAd; ILA; PMd; ENT; PAGvl; PR; }
+SG -> {DTN; }
+BSTpr -> {PVI; LH; MEA; BMAa; PAGrm; B; BSTif; PVHmpd; BSTmg; RERv; PH; PT; PSCH; AD; LHA; SBPV; TMv; RERm; PVpo; LSv; IMD; BSTv; SUMl; SPFm; BSTtr; PCG; MDm; VMHvl; PMv; BMA; DMH; PVT; DMHa; CEAc; AHN; IAM; PA; ZI; PMd; AHNa; MH; BSTpr; PAGm; AV; BSTfu; CEAm; TU; PVHam; SO; PVHap; PVp; ADP; MPN; LPO; SUMm; SI; PVHdp; PF; SUBv; AVPV; MPNl; RECp; PVHpmm; PVHpv; PVa; BSTav; DMHv; RERl; BSTad; ARH; COApl; AHNc; MPNc; MEAad; MPNm; CM; MPO; COApm; RCH; PAGvl; AAA; BSTdl; BSTcc; AHA; }
+PAGm -> {DMH; }
+MM -> {SUBd; ENTl; SUM; RSP; SUB; PRE; AV; PAR; PMv; ENTm; ACA; PL; TM; RSPv; AD; SUBv; PMd; ILA; TT; }
+ACA -> {ENTl; PAG; LH; CA1; RSP; RSPagl; MRN; CLI; TRN; VENT; TM; PT; AD; LHA; FF; VP; LP; IMD; SPFm; SUMl; RT; SNr; VM; NDB; RE; LA; LDT; SNc; MDc; MDm; IF; CLA; PVT; PL; MD; RL; RSPv; IAM; STN; ZI; MO; VISp; DR; AM; RA; MOp; SUBd; GPm; SUB; CS; VTA; PRE; AV; ACA; ORBm; RSPd; OT; SS; LPO; SUMm; VAL; SI; LC; SMT; PERI; PF; SN; SUBv; MA; CP; PG; CL; SSp; ILM; ORB; CA3; MDl; RH; PO; CM; LD; GP; ILA; ENT; SC; }
+ORBm -> {NDB; LS; MS; SI; NId; CP; PMd; NIc; }
+GPl -> {PPN; }
+SS -> {SCig; PF; RT; CM; }
+VISlm -> {MOs; APN; SCop; LP; RSP; SSs; LD; PRE; VISp; ACA; VISal; LGd; NOT; RT; ENT; }
+AMd -> {RSPagl; }
+PVp -> {LSv; MPN; PMd; }
+VAL -> {RT; }
+BLAp -> {LSr; CA1; SUB; BSTad; BSTmg; BSTdm; BSTju; BSTsc; CA3; PRC; BSTrh; PAR2; PERI; PMd; BSTtr; TR; BSTal; BSTav; }
+MARN -> {}
+SMT -> {MOp; ORBm; CLA; MOs; RT; ORBl; ORBvl; }
+PERI -> {ENTl; COA; NLOT; MOs; RE; LA; AIv; VMH; RSPagl; SSp; TM; PRC; PIR; ILA; TEv; RER; }
+SN -> {MOp; LH; CP; MOs; LDT; VTA; PPN; CGB; MD; PAL; STN; LHA; PB; LD; ZI; DR; GP; PF; NOT; SC; }
+PF -> {MOp; AI; CP; MOs; SUB; PAR; MRN; ACA; SSp; PL; NId; ZI; RT; ENT; PRT; SC; }
+IOpr -> {PYR; PFL; NOD; CUL4; CUL5; LING; FOTU; DEC; UVU; CENT2; CENT3; }
+AVPV -> {PVI; MEA; LH; B; LM; BSTif; PVHmpd; BSTdm; DMHp; PT; PH; PSCH; TMv; SBPV; LHA; PVpo; PB; PVHf; LSv; SUMl; BSTv; BSTtr; RE; PCG; LDT; MEApd; BSTsc; DMH; PVT; DMHa; BST; LS; PVHmpv; ZI; DR; SCH; BSTpr; VTA; MM; BSTfu; CEAm; PVHam; PBl; PS; SO; PVHap; PRC; PVp; TMd; MPN; ADP; SI; SUMm; LC; PVHdp; NTSm; MPNl; PVa; PVHpv; DMHv; BSTad; ARH; MEPO; AHNc; AVP; MPNc; PVHlp; MPNm; MPO; NTS; SFO; PAGvl; }
+AUDp -> {MOs; }
+MG -> {LGv; VISp; LGd; AUD; RT; }
+BSTad -> {LSr; DMH; PMd; }
+SCsg -> {LGd; LP; }
+VTN -> {PMd; MOs; RSP; ORB; }
+SSp -> {MOp; PG; MOs; AUDd; CS; AIp; CL; RSPagl; TRN; ORB; TM; VAL; VP; LD; PERI; DR; RT; TEv; VM; }
+MPNc -> {PVI; BSTpr; LSr; LH; VTA; CS; MRN; PRNc; PVHmpd; TU; PS; PVHap; PVp; LPO; ADP; PH; PSCH; PD; SI; SUMm; LHA; LC; PVpo; PBlc; PVHdp; LSv; PBld; AVPV; PVHpv; PVa; PAGd; LDT; OV; ARH; PMv; VMHvl; MEApd; CL; IF; AVP; PPN; DMH; PP; PVHlp; RM; BST; PGRNl; AHN; SPFp; MPO; PVHmpv; ZI; NTS; DR; SFO; ILA; PAGvl; RPO; }
+RM -> {PH; MPN; CM; }
+PBle -> {PH; DMH; MEPO; }
+MEAad -> {ENTl; PVI; BMAa; CA1; PAGrm; MEAav; BSTif; BSTdm; BSTmg; RERv; PH; SBPV; LHA; AOBmi; LSv; SUMl; BSTv; BSTtr; TR; NDB; MS; LA; MDm; VMH; AIv; PMv; MEApd; ENTm; BSTsc; DMH; IF; CLA; PVT; PAA; PL; AON; BA; CEAc; DMHa; MEApv; RL; TTv; PA; BSTrh; ZI; FS; DR; PMd; BSTpr; PAGm; SUB; MM; VTA; AIp; CEAm; TU; OT3; PVHap; PVp; ENTMv; SUMm; SI; PERI; TTd; SUBv; MPNl; BSTal; BSTav; PVa; RER; RERl; BSTad; ARH; PAR; COApl; CL; AHNc; CA3; SF; BMAp; MPO; COApm; RCH; ILA; AAA; BSTdl; }
+LGv -> {PAG; MT; LT; RR; MRN; IGL; SCdg; SCig; PBG; APN; PPT; LC; LGd; CB; VNC; MPT; PRT; DTN; SCop; OP; PG; MG; SCsg; LGv; ND; PO; NPC; LD; ZI; VISp; DR; NOT; SCH; SC; }
+SF -> {MH; NDB; PRC; PH; MS; NId; LHA; TRS; SUMl; NIc; CA3; }
+SPFp -> {MPN; LSr; DMH; PA; }
+SLD -> {}
+ACAd -> {POST; PAG; RSP; AV; LM; TRN; SS; NIc; PRC; PT; AD; NId; BLA; AUD; LP; MEV; SMT; GRN; RT; PRT; ORBvl; CP; PG; MDm; MDc; PAR; PMv; CL; PRN; SSp; VPL; PL; MDl; PO; ND; LD; MO; VISp; EW; AM; PMd; VPM; SC; }
+PAGvl -> {PRC; PH; DMH; NId; NIc; }
+AHA -> {LS; LSr; MPN; MEA; PAG; VMH; PMv; DMH; PMd; PBl; PL; AHA; BST; }
+IPNc -> {NId; }
+BSTov -> {BMAa; RR; VTA; BSTfu; MRN; BSTif; BSTdm; BSTju; CEAm; GPl; PBlv; LTN; PVHap; SI; DMX; IA; LHA; KF; PBlc; BLAp; PBld; PF; NTSm; BSTtr; TR; CEAl; BSTal; BSTav; PCG; BSTad; SNc; BSTsc; AVP; PVT; PBle; CEAc; PBmm; BSTrh; STN; CM; ZI; DR; PAGvl; }
+RSPagl -> {AV; PRE; RSPagl; AMd; SCdg; SCig; LPO; PAGdl; APN; AUD; LHA; LP; PAR1; PERI; RT; AHNd; TEv; MPT; RER; ORBvl; NDB; AMv; PCG; PG; CP; MOs; CL; ECT; CLA; LGvm; ACAv; PL; MDl; PTLp; NPC; LD; ZI; ACAd; }
+MRN -> {MT; CP; LT; SNc; VTA; DMH; AVP; ORB; PRC; PH; MPN; CM; RT; SNr; }
+BSTmg -> {PVI; LH; LSr; BMAa; PRNr; RPA; PAGrm; B; RR; MRN; BSTif; CLI; BSTdm; PVHmpd; DMHp; PT; PH; PD; SBPV; LHA; TMv; PVpo; RERm; PVHf; IMD; SUMl; BSTv; BSTtr; SNr; PAGd; PCG; LDT; SNc; COM; MDm; OV; VMHvl; PMv; BSTsc; IF; RECm; PVT; DMHa; CEAc; PBmm; BSTrh; PVHpml; PVHmpv; CSl; ZI; REa; DR; EW; PMd; SCH; AHNa; PAGm; VTA; BSTfu; PRNc; CEAm; TU; PVHam; SO; PS; PVHap; SCdg; PRC; PVp; ADP; LPO; SUMm; SI; LC; PBlc; BLAp; CSm; PVHdp; GRN; PF; PVHpmm; AVPV; MPNl; RECp; BSTal; BSTav; PVHpv; PVa; DMHv; RO; RERl; BSTad; ARH; MEPO; AVP; AHNc; PPN; MPNc; PVHlp; RM; MPNm; CM; MPO; SFO; RCH; PAGvl; AAA; AHA; }
+BSTdm -> {PVI; LH; PRNr; RPA; PAGrm; B; MRN; BSTmg; PVHmpd; LTN; DMHp; PT; PSCH; PH; MDRNv; PD; LHA; SBPV; PVpo; VMHdm; AHNp; LSv; SUMl; BSTv; PAGd; NDB; PCG; LDT; COM; AIv; PMv; ASO; VMHvl; SOr; IF; DMH; CLA; PVT; VMHc; CEAc; PBmm; PGRNl; IAM; PARN; PVHmpv; ZI; SCH; VTA; BSTfu; AId; PRNc; CEAm; PVHam; TU; OT3; PS; SO; PVHap; LPO; SI; SUMm; PBlc; CSm; CUN; PVHpmm; BSTal; MPNl; BSTav; DMHv; RO; ARH; MEPO; COApl; AVP; AHNc; VMHa; MPNm; CM; BSTcc; BMAa; RR; BSTif; CLI; RERv; AD; TMv; RERm; PVHf; IMD; PBld; BSTtr; CEAl; SNr; MS; SNc; MDm; OV; BMA; BSTsc; PL; MEApv; DMHa; RL; TTv; BSTrh; ND; PVHpml; DR; EW; PMd; BSTpr; AHNa; PAGm; MM; PBlv; SCdg; PRC; PVp; ADP; LC; BLAp; MARN; PVHdp; GRN; PF; RECp; AVPV; PVa; PVHpv; RERl; BSTad; PPN; MPNc; RM; PVHlp; MEAad; SPFp; MPO; SLD; SFO; RCH; ILA; AAA; PAGvl; AHA; }
+TRN -> {LGv; MPN; LT; OP; RSP; ACA; TRN; NOT; ORB; }
+PSCH -> {PVI; MEA; LSr; MM; OV; ARH; DMH; PVp; PH; LHA; PVpo; MPO; LSv; AVPV; SCH; PVa; PVHpv; }
+SBPV -> {PVI; LSr; PAG; MM; PVHmpd; DMH; TU; PVT; IGL; PVHap; BST; LGv; PT; PH; PVHmpv; PVHdp; LSv; AVPV; PVa; PVHpv; SCH; RER; }
+LP -> {SCop; MOs; RSP; SCsg; RSPagl; RSPd; DN; LGv; PBG; VAL; PO; AUD; VP; ZI; VISp; LGd; ACAd; NOT; TEv; PRT; SC; AHA; }
+PVpo -> {MPN; DMH; PA; }
+AOB -> {SO; }
+LGd -> {DTN; PAG; OP; SCop; MG; SCsg; MRN; LGv; PO; PBG; LHA; APN; PPT; SCzo; LC; NPC; ZI; VISp; DR; NOT; RT; R; SC; PRT; SCH; }
+SPFm -> {DMH; }
+TEv -> {PAG; MGd; MA; RE; CP; SUB; RSP; MGm; LDT; LA; MM; AUDv; BMA; RSPagl; SGN; MGv; SPF; PVT; PP; CGB; SI; ICd; BLA; LHA; LC; LP; ICe; DR; RT; ENT; TEv; SC; }
+PAGd -> {PRC; PH; PMd; }
+NDB -> {ENTl; MOp; LSr; AI; SUB; RSP; MM; PRE; RSPagl; ACA; OT; NIc; LPO; MPN; NId; LHA; CA3sr; PERI; SUMl; CA3so; SUBv; MS; MOs; ENTm; MMme; PL; AON; SF; PAR2; ILA; ENT; }
+LDT -> {PRC; LSr; MPN; PH; SF; MT; ILA; PMd; PL; ORB; ORBvl; RER; }
+AIv -> {MDl; MPN; }
+SOr -> {}
+PRN -> {MOp; ORBm; ACAd; LT; ILA; MOs; PL; }
+ECT -> {ENTl; NDB; RE; MOs; CA1; SUB; LA; AIp; PRE; PAR; RSPagl; SSp; RSPd; ACAv; PRC; AD; PERI; PIR; TEv; }
+IF -> {LS; ACA; LH; LC; }
+CLA -> {RSPagl; DMH; MOs; RER; }
+MMme -> {ENT; }
+VMHc -> {ENTl; LSr; BSTif; MRN; BSTdm; BSTmg; RERd; ZIda; PH; PSCH; SBPV; LHA; RERm; AHNp; PIR; SUMl; BSTtr; TR; PAGd; PCG; LA; COM; PMv; IF; DMH; PP; PVT; PAA; RECm; PL; DMHa; CEAc; RL; ZI; PMd; AHNa; MM; RECd; CEAm; TU; PVHap; SCdg; PRC; SCig; SUMm; SI; CUN; PERI; MPNl; PVHpv; BSTav; RER; DMHv; BSTad; COApl; CL; AVP; AHNc; MEAad; SPFp; BMAp; MPO; ACAd; ILA; RCH; PAGvl; }
+PBmm -> {PH; DMH; }
+BST -> {MH; PVI; LH; PAG; MEA; VTA; CS; MM; LM; MRN; PVHmpd; PVHam; PBl; SO; PVHap; PVp; MPN; PT; PH; SUMm; SI; LHA; LC; MEV; PVHdp; SUMl; PVHpmm; PVHpv; PCG; PBm; VMH; ARH; PMv; BMA; PPN; DMH; PVT; PL; PVHlp; AHN; PVHpml; PA; PVHmpv; DR; PMd; AHA; }
+IAM -> {ENTl; ENTm; RSPd; RSPv; MMme; }
+CSl -> {DMH; NId; NIc; }
+ZI -> {LSr; PAG; MG; MRN; PVHmpd; PPN; LRN; NIc; PVHap; LGv; SPVC; PRC; PH; DMX; PO; NId; SBPV; APN; VP; NPC; PVHmpv; PVHdp; SN; NOT; PMd; ENT; RA; SC; SCH; PVHpv; RER; }
+IOma -> {PYR; ANcr1; PFL; NOD; CUL4; ANcr2; SIM; CUL5; LING; FOTU; FL; DEC; UVU; CENT2; CENT3; }
+AM -> {ENTl; RSPv; MOs; MM; LM; PAR; ENTm; ACAd; RSPd; MMme; SUBv; PL; ACAv; TEv; }
+IPNa -> {NIc; }
+GPm -> {CP; }
+SUB -> {ENTl; LSr; POST; SUM; CA1; RSP; SUB; MM; AV; LM; PRE; PAR; ENTm; ORBm; MMme; PL; CA3; SF; AM; ATN; SUBv; ILA; }
+BSTfu -> {PVI; MHv; BMAa; BSTov; PAGrm; RR; BSTif; MRN; CLI; BSTdm; BSTmg; PVHmpd; BSTju; RERd; OT1; LTN; ZIda; DMHp; PSCH; PH; TMv; LHA; SBPV; RERm; PVpo; BSTd; AHNp; PVHf; LSv; IMD; PBld; BSTv; SUMl; BSTtr; TR; CEAl; NDB; MS; PCG; RE; LDT; SNc; OV; MDm; PMv; BSTsc; IF; PVT; RECm; PBmm; CEAc; DMHa; BSTrh; PVHpml; PVHmpv; ZI; FS; DR; OT2; AHNa; PAGm; VTA; CEAm; TU; GPl; PVHam; OT3; PBlv; SO; PS; PVHap; PVp; ADP; LPO; TMd; SUMm; IA; SI; BLAp; PBlc; PVHdp; NTSm; PVHpmm; RECp; BSTal; AVPV; MPNl; BSTav; PVa; PVHpv; DMHv; CP; RERl; BSTad; ARH; MEPO; AHNc; AVP; PVHlp; PBle; MEAad; BLAa; VMHa; SF; CM; SPFp; BMAp; MPO; ILA; RCH; PAGvl; BSTcc; BSTdl; }
+AIp -> {SI; CP; AIv; MDm; FS; PIR; PERI; GP; OT; }
+OT -> {SN; VTA; SNr; TM; }
+SO -> {LHA; }
+PVHap -> {LSv; MPN; DMH; PPN; }
+PFL -> {TRN; }
+MPN -> {PVI; PAG; LH; MEA; LM; MRN; PVHmpd; TRN; CGB; IPN; TM; PT; PH; DMX; LHA; LSv; IC; SUMl; NDB; DTN; RE; SUM; PCG; LDT; VMH; PMv; DMH; PP; PVT; MD; BST; LS; AHN; ND; PA; STN; PVHmpv; ZI; III; DR; PMd; RPO; SCH; SUB; MM; VTA; CS; PBl; SO; PVHap; RN; PVp; LPO; MPN; SI; LC; CUN; PVHdp; GRN; PF; SN; VNC; PVa; PVHpv; RER; MA; CP; RO; ARH; MEPO; VTN; PPN; RM; PVHlp; PO; NTS; SLD; SC; }
+SCig -> {LGv; LGd; LP; ZI; }
+SUMm -> {LS; MPN; LSr; NId; LC; LSv; ACA; DMH; NIc; RER; }
+SI -> {NLOT; PVI; PAG; MEA; LH; LSr; RR; MRN; SLC; TM; PT; PH; DMX; BLA; LHA; PB; PVpo; PIR; SUMl; RT; SNr; NDB; RE; SUM; LA; SNc; MOB; VMH; PMv; MEApd; DMH; PP; PVT; PL; MD; BST; AHN; PA; STN; PVHmpv; ZI; DR; VTA; BSM; ACA; ORBm; PVHam; SPF; PVHap; PVp; LPO; MPN; LC; PVHdp; SMT; PERI; PVa; PVHpv; COA; MA; CP; ARH; CL; PPN; ORB; MEAad; RH; CM; MPO; NTS; VPLpc; ILA; RCH; ENT; PAGvl; AAA; AHA; }
+PAGdl -> {PRC; PH; RER; }
+CUN -> {PRC; NOT; CGB; }
+CSm -> {DMH; NId; NIc; }
+ORBl -> {NDB; SI; NId; CP; FS; GP; OT; NIc; }
+ICc -> {AUD; }
+NTSm -> {PVHmpd; DMH; SO; PVHmpv; PVHlp; PVHap; PVHpv; PVHdp; }
+BSTal -> {LH; BMAa; BSTov; PAGrm; B; RR; BSTif; MRN; PVHmpd; BSTmg; CLI; BSTdm; BSTju; LTN; PH; PT; DMX; LHA; RERm; PVHf; AHNp; IMD; LSv; PBld; SUMl; BSTv; BSTtr; CEAl; SNr; TR; PCG; SNc; MDm; BSTsc; IF; PVT; RECm; PBmm; CEAc; DMHa; RL; BSTrh; PARN; ZI; FS; DR; BSTpr; PBmv; PAGm; VTA; BSTfu; PRNc; RECd; CEAm; TU; OT3; PBlv; NTSl; PS; SO; PVHap; ADP; LPO; SI; IA; MEV; PBlc; BLAp; PVHdp; PIR3; GRN; RECp; BSTal; BSTav; MA; DMHv; CP; RERl; BSTad; COApl; AVP; PVHlp; MEAad; PBle; RH; CM; BMAp; MPO; COApm; RCH; BSTse; PAGvl; AAA; }
+DMHv -> {LSv; PRC; }
+CL -> {MOp; LH; PAG; LSr; RSP; MRN; ACA; PRNc; RSPagl; SCiw; IPN; SCdg; SPVC; SCig; APN; LC; PB; SCdw; GRN; SN; ORBvl; DTN; MOs; SSp; DMH; RM; LS; MO; ACAd; DR; RA; SC; }
+AHNc -> {PVI; LH; PAG; LSr; BMAa; CA1; IAD; MEAav; BSTif; MRN; PVHmpd; RERv; PT; PH; PSCH; LHA; SBPV; VMHdm; PVpo; AHNp; LSv; SPFm; BSTtr; RE; MDm; VMH; MEApd; DMH; PP; PVT; LGvm; PL; VMHc; MEApv; DMHa; CEAc; PA; NPC; PVHmpv; ZI; PMd; AHNa; MM; VTA; TU; PVHap; SCdg; PVp; PRC; LPO; MPN; ADP; SCig; SI; SUMm; BLAp; CUN; PVHdp; SUBv; MPNl; AVPV; RER; AMv; RERl; BSTad; AHNc; AVP; MEAad; CA3; RH; SF; CM; BMAp; LD; ILA; PAGvl; }
+AVP -> {PVI; MEA; LH; LSr; B; BSTfu; BSTif; BSTmg; PVHmpd; BSTdm; PVHam; PBl; SO; PS; PVHap; DMHp; PRC; LPO; MPN; PSCH; PH; SUMm; SI; PD; LHA; PVpo; PVHf; PVHdp; SUMl; BSTv; SUBv; MPNl; AVPV; PVa; PVHpv; DMHv; SUM; PCG; RE; VMH; ARH; MEPO; PMv; CL; PPN; AVP; DMH; MPNc; PVT; PVHlp; DMHa; BST; AHN; MPNm; MPO; PVHmpv; ZI; DR; SFO; PAGvl; BSTdl; }
+ILM -> {SC; }
+VMHa -> {ENTl; MM; AIp; MRN; AId; BSTif; BSTdm; BSTmg; CEAm; TU; RERv; ZIda; SCdg; PRC; SCig; PSCH; SUMm; SI; LHA; SBPV; CUN; PERI; PIR; SUMl; BSTtr; MPNl; BSTav; PAGd; PCG; LA; BSTad; COM; PMv; CL; COApl; AHNc; AVP; IF; PP; PAA; CEAc; RL; BSTrh; SPFp; MPO; ZI; PMd; RCH; PAGvl; }
+RH -> {MOp; SUBd; CA1; MOs; AUD; RSP; SSs; ACA; SSp; ILA; PL; ORB; }
+MPNm -> {PVI; BSTpr; LSr; LH; CS; PVHmpd; TU; PS; SO; PVHap; TM; PVp; PRC; PH; ADP; LPO; PSCH; PD; SI; SUMm; LHA; PVpo; PVHdp; LSv; SUMl; SUBv; AVPV; PVa; PVHpv; RE; LDT; OV; VMHvl; ARH; MEApd; CL; DMH; IF; PPN; PVT; BST; AHN; PA; SPFp; PVHmpv; MPO; ZI; SFO; ILA; PAGvl; }
+NTS -> {AMBd; PGRNl; MPN; PVHmpv; PVHmpd; V; ILA; PL; PVHpv; PVHap; BST; }
+NOT -> {PG; MT; OP; LT; MG; RSP; VTA; RR; IO; SSp; TRN; RN; LGv; ND; FF; NPC; LP; INC; ZI; VISp; NOT; EW; PRP; PRT; AUDp; }
+IOda -> {PYR; PFL; NOD; CUL4; CUL5; LING; FOTU; DEC; UVU; CENT2; CENT3; }
+BMAa -> {BSTpr; PVI; CA1; BSTov; BSTfu; AIp; MEAav; BSTif; BSTdm; BSTmg; OT; CEAm; TU; PVHap; PT; SI; LHA; SBPV; PVpo; BLAp; SUMl; BSTv; SUBv; BSTtr; MPNl; BSTal; CEAl; TR; PVa; BSTav; RE; LA; BSTad; AIv; MDm; MEPO; VMHvl; COApl; MEApd; AHNc; BSTsc; PAA; PVT; BA; MEAad; MEApv; CEAc; NLOT3; BSTrh; CM; SPFp; BMAp; MPO; COApm; FS; RCH; ILA; PMd; AAA; BSTdl; }
+RR -> {ACA; PH; CP; LC; }
+MEAav -> {PMd; VMHdm; VMHc; VMHvl; }
+LM -> {DTN; SUBd; SUM; PRE; PAR; ACA; ILA; SUBv; ENT; PL; TM; }
+BSTif -> {ENTl; LH; LSr; BMAa; PAGrm; MEAav; BSTif; BSTmg; PVHmpd; RERv; PH; PT; TMv; SBPV; LHA; VMHdm; RERm; AHNp; LSv; IMD; SUMl; BSTv; BSTtr; NDB; MS; LA; COM; MDm; VMH; VMHvl; PMv; DMH; PVT; PAA; CEAc; VMHc; MEApv; IAM; PA; ZI; PMd; OT2; BSTpr; AHNa; PAGm; RECd; CEAm; TU; OT3; PVHap; PRC; ADP; LPO; SUMm; IA; SI; ENTMv; RECp; MPNl; BSTav; DMHv; RERl; BSTad; COApl; AVP; AHNc; MEAad; VMHa; MPNm; CM; BMAp; MPO; COApm; RCH; ILA; AAA; PAGvl; BSTdl; BSTcc; AHA; }
+VENT -> {VISp; LGv; LGd; RT; }
+FL -> {AMBd; MT; PCG; LT; y; IV; LAV; TRN; x; VII; MV; LRN; RM; SUV; LC; NR; IOma; III; NIS; SPIV; PRP; RPO; z; }
+IPN -> {LC; }
+AD -> {ENTl; POST; MOs; SUM; RSP; MM; LM; PRE; ARH; PAR; ACA; ENTm; RSPd; RSPv; RT; ILA; }
+NId -> {ENTl; LH; RSP; LM; MRN; TRN; NIc; PH; NId; LHA; SCzo; SCdw; SUMl; VM; NDB; DTN; MS; MOs; PCG; LDT; SNc; PRN; ENTm; CLA; IF; PVT; PL; DMHa; ND; IPNl; CSl; ZI; IOma; DR; IPNlr; PMd; PRP; RPO; MH; IPNa; SUB; VTA; PRE; AIp; ACA; SCiw; SCdg; PVp; SCig; LPO; SUMm; PAGdl; CUN; CSm; PF; RER; SCop; PAR; SCsg; CL; VTN; RH; MDl; SF; CM; ILA; PAGvl; }
+BLA -> {PL; }
+IMD -> {AId; ENTl; PL; AIp; }
+PBld -> {DMH; MEPO; }
+IC -> {SC; }
+RT -> {DTN; PAG; MRN; ACA; PVT; ORB; LGv; PH; PBG; APN; LC; RERm; VISp; DR; LGd; R; RER; }
+BSTtr -> {PVI; LH; BMAa; CA1; PAGrm; RR; MRN; BSTif; BSTmg; CLI; RERd; RERv; PH; PT; MDRNv; LHA; AHNp; IMD; PIR; BSTv; SUMl; TR; PAGd; PCG; LDT; COM; SNc; MDm; VMHvl; DMH; RECm; PVT; PBmm; CEAc; MEApv; DMHa; VMHc; PA; BSTrh; PARN; ZI; FS; DR; PMd; BSTpr; AHNa; PAGm; VTA; BSTfu; RECd; CEAm; TU; PBlv; SO; PVHap; PVp; PRC; SI; IA; PBlc; CSm; GRN; PF; BSTal; RECp; BSTav; DMHv; BSTad; COApl; AHNc; PVHlp; MEAad; RH; CM; SPFp; MPO; BMAp; COApm; RCH; PAGvl; AAA; }
+IPNd -> {DTN; }
+SNr -> {PAG; CP; LC; SNc; MRN; ACA; OT; PPN; ILA; SC; }
+CEAl -> {PBme; BSTov; PCG; BSTad; BSTfu; CEAm; BSTsc; GPl; PBlv; LTN; PBle; PVHap; PBmm; SI; BSTrh; LHA; MEV; BLAp; PBlc; FS; BSTv; NTSm; AAA; TT; BSTal; }
+CA1sp -> {PMd; }
+MS -> {ENTl; NDB; SUB; VTA; CS; LM; PRE; MEPO; ENTm; MMme; NIc; SO; PT; MPN; SF; PAR2; LHA; CA3sr; DR; SUMl; CA3so; }
+MOs -> {PAG; RSP; TRN; NIc; TM; PH; AD; NId; BLA; LHA; FF; LP; RT; VM; ORBvl; MOs; PCG; SSs; MDm; IO; MDc; AIv; PHY; PRN; ECT; CLA; MD; ND; ZI; FS; III; MAN; AM; MOp; AI; PRE; AIp; AV; ACA; RSPd; PRC; VAL; SI; PERI; SMT; PF; CP; PG; CL; SSp; VPL; ORB; MDl; RH; PO; CM; LD; INC; NTS; GP; VPM; ENT; SC; }
+RE -> {ACA; CLA; PL; }
+LA -> {CA1; SUB; AUDv; RSPd; VISal; ECT; CA3; PRC; ENTMv; PTLp; PAR2; PERI; VISp; TEv; AUDp; }
+SNc -> {NDB; CP; VTA; IO; ACA; RSPagl; OT; PPN; MD; LS; SI; FF; LHA; LC; CUN; CSm; DR; GP; VM; }
+MDc -> {ORBm; ACAd; RT; PL; ORBv; AIv; ORBl; ORBvl; }
+IO -> {MT; APN; OP; PPT; MO; NOT; SS; CBX; PRT; SC; MPT; }
+ENTm -> {CA1; SUB; PRE; PAR; TM; }
+BSTsc -> {BSTov; PAGrm; RR; BSTif; PVHmpd; CLI; BSTdm; BSTmg; BSTju; OT1; LTN; PH; PT; DMX; LHA; SBPV; PVHf; AHNp; IMD; PBld; BSTv; SUMl; BSTtr; NDB; PCG; SNc; MDm; IF; BSTsc; RECm; PVT; PBmm; DMHa; CEAc; RL; IAM; BSTrh; ZI; FS; DR; OT2; BSTpr; PBmv; PAGm; VTA; BSTfu; CEAm; TU; NTSl; OT3; PBlv; PS; PVHap; ADP; LPO; SI; IA; MEV; PBlc; PVHdp; PIR3; BSTal; RECp; PVHpv; BSTav; MA; DMHv; BSTad; MEPO; PVHlp; PBle; MEAad; RH; CM; MPO; BMAp; PBls; RCH; PAGvl; BSTse; AAA; BSTdl; }
+LGvm -> {PRC; PH; R; SCH; RER; }
+ACAv -> {MDl; AD; PH; RSPv; POST; NId; LD; PRE; AV; PAR; ACAd; RSPd; AM; ILA; PL; NIc; RER; }
+MD -> {ENTl; MOs; ORBl; ACA; RT; PL; ORBv; SC; ORBvl; }
+VPMpc -> {VISC; }
+RL -> {LS; ACA; LH; DMH; LC; }
+RSPv -> {POST; RE; AV; CL; RSPd; PVT; NIc; RH; MDl; RSPv; PT; AD; NId; CM; LD; SMT; AM; ILA; }
+AHN -> {PAG; LSr; VMHdm; PVHmpv; PVHdp; LSv; PVHmpd; PPN; PMd; PBl; MPNl; PVHpv; BST; }
+ICd -> {SC; }
+STN -> {VTA; SNc; }
+IPNl -> {NIc; }
+VISp -> {MOp; POST; RSP; CS; AIp; PRE; RSPd; TRN; VISlm; VISpl; APN; LHA; PPT; LP; SCzo; PERI; LGvl; LGd; RT; TEv; PRT; VM; NDB; RE; SCop; OP; PG; CP; MOs; SCsg; PAR; CL; VISal; SSp; CLA; LGvm; ILM; LGv; RSPv; CM; LD; ZI; VISp; ACAd; DR; NOT; ENT; SC; VISam; }
+PMd -> {DTN; AHNa; LSr; PAG; PCG; AMv; RE; PAGrm; COM; CS; VTN; CL; MRN; AHNc; PVT; TU; RM; RL; ZIda; PRC; PH; LHA; PAGdl; SPFp; LP; MPO; AHNp; ZI; CUN; LSv; DR; SPFm; SC; RER; }
+PRP -> {DTN; NId; OP; APN; MT; PPT; PRN; TRN; NOT; }
+RPO -> {MT; }
+AHNa -> {IAD; MM; MRN; BSTif; PVHmpd; RERv; PVHap; SCdg; PRC; PH; LPO; PSCH; SCig; MPN; SUMm; SBPV; LHA; VMHdm; AHNp; PVHdp; BSTtr; MPNl; RER; VMH; AHNc; DMH; PVT; DMHa; RH; MDl; NPC; PVHmpv; ZI; PMd; PAGvl; }
+SUBd -> {LS; SF; CA1; SUM; MM; AV; LM; PERI; ACA; RSPd; OT; ATN; MMme; AON; }
+MT -> {PAG; LT; MRN; SLC; SUV; APN; LP; PB; PPT; LGd; CB; SNr; MPT; DTN; PG; OP; SCop; MG; SNc; IO; LAV; PRN; LGv; ND; NPC; INC; ZI; III; NOT; EW; SC; }
+PRE -> {NDB; POST; MS; RE; SUM; SUB; RSP; CS; MM; PRE; AV; LM; PAR; RSPd; CLA; MMme; TM; AD; LC; LP; LD; DR; AM; ATN; SUBv; ENT; }
+AV -> {SUBd; ENTl; POST; MOs; RSP; SUB; MM; LM; PRE; PAR; ENTm; ACA; RSPd; SO; RSPv; SUBv; ENT; }
+RSPd -> {MOp; PAG; POST; AV; PRE; ACA; RSPd; NIc; IPN; AD; VAL; NId; LC; LP; VP; ORBl; RT; NDB; MS; RE; MOs; CP; PG; PAR; CL; ENTm; CLA; ORB; MD; RH; RSPv; LD; ZI; VISp; ACAd; AM; RA; SC; }
+VII -> {SC; }
+PBlv -> {PH; }
+PBl -> {DMHv; SO; DMHa; DMHp; }
+PRC -> {PRNr; RPA; IAD; B; RR; MRN; BSTif; CLI; RERd; NIc; DMHp; PH; NId; LHA; SBPV; LP; AHNp; IMD; PBld; SUMl; BSTv; BSTtr; MPT; PAGd; NDB; MS; LDT; MDc; DMH; PVT; LGvm; RECm; DMHa; RL; PGRNl; IAM; PARN; NPC; PVHmpv; ICe; ZI; DR; PMd; RPO; AHNa; SUB; VTA; RECd; PRNc; MDRNd; CEAm; IGL; LPO; SI; SUMm; LC; PBlc; CUN; MARN; PVHdp; GRN; LGvl; NTSm; PF; DMHv; AMv; RERl; RO; CL; AHNc; PPN; RM; PBle; MDl; CM; SPFp; LD; SLD; RCH; ILA; PAGvl; }
+ADP -> {PVI; MEA; LH; LSr; LM; PVHmpd; BSTdm; BSTmg; DMHp; PSCH; PH; LHA; SBPV; PVpo; PVHf; LSv; BSTv; SUMl; NDB; MS; SUM; RE; PCG; VMH; PMv; DMH; PVT; DMHa; BST; LS; PVHmpv; ZI; DR; SCH; AHNa; MM; BSTfu; PVHam; SO; PVHap; PRC; PVp; TMd; MPN; LPO; SUMm; LC; PVHdp; MPNl; PVa; PVHpv; DMHv; MEPO; ARH; AHNc; AVP; MPNc; PVHlp; SF; MPNm; MPO; SFO; RCH; BSTdl; }
+APN -> {PAG; RSP; VTA; RR; ACA; MRN; RSPd; TRN; VII; SS; MV; SO; RN; LPO; PH; VAL; PBG; LP; PPT; LC; MARN; GRN; IC; SN; RT; PG; OP; LDT; VMH; SSp; PPN; PP; RL; LGv; RSPv; ND; NPC; MPO; LD; ZI; NTS; ICe; III; SLD; VISp; PRP; SCH; }
+LC -> {MPN; CM; SNc; VTA; RR; DMH; SUMl; SNr; SO; PVHpv; IPN; }
+CB -> {TRN; }
+VNC -> {LT; MT; }
+PVHpv -> {MPN; LHA; PVHmpv; PVHdp; LSv; PVHmpd; DMH; PVHlp; PVHap; }
+PVa -> {LSv; MPN; }
+RER -> {LSr; SUB; LA; PRE; ACA; RSPagl; AON; PL; BST; LS; TTv; BMAp; CA1slm; PAR1; TTd; PIR; PERI; ILA; TR; ORBvl; }
+CP -> {GP; PPN; SI; TM; }
+RERl -> {ENTl; }
+PPN -> {LGv; MPN; PH; DMH; RT; RER; }
+NI -> {MPN; }
+PVHlp -> {DMH; DMX; PPN; }
+ORB -> {MOp; AD; PO; VAL; MOs; CM; LP; CL; ACA; TRN; PF; AM; ORB; MD; VM; }
+CA3 -> {NDB; MS; CA1; SUM; SUB; RSP; AV; PRE; PAR; ACA; CA3; LS; AD; SF; PAR2; LD; TRS; PAR1; LSv; AM; SUBv; ENT; }
+PO -> {SCop; OP; RR; MRN; PRNc; SSp; SCiw; SGN; PPN; VPL; DN; RM; SUV; RN; SCdg; LGv; SCig; APN; MEV; VP; NPC; INC; ZI; VISp; SCdw; GRN; SN; SPIV; RT; PSV; }
+LD -> {POST; MOs; OP; PRE; SCsg; PAR; RSPagl; ACA; ENTm; RSPd; ACAv; SCdg; PRC; LGv; SCig; RSPv; APN; LHA; PPT; NPC; ZI; VISp; ACAd; NOT; RT; ENT; SC; MPT; }
+MPO -> {LH; PAG; MEA; LSr; LM; TRN; CGB; IPN; PT; PH; DMX; LHA; LSv; IC; NDB; DTN; RE; SUM; LDT; VMH; PMv; DMH; PVT; PP; MD; BST; LS; AHN; PA; ND; STN; ZI; III; DR; PMd; RPO; SUB; MM; CS; VTA; PBl; SO; RN; PRC; LPO; MPN; SI; LC; CUN; GRN; PF; SN; VNC; CP; RO; MEPO; ARH; VTN; PPN; RM; PO; NTS; }
+INC -> {LT; MT; SNc; SNr; RN; }
+COApm -> {BSTpr; ENTl; LSr; MEA; AOBgr; SUB; AIp; AId; BSTif; BSTdm; OT; PERI; LSv; PIR; CA3slm; SUBv; BSTtr; MPNl; TR; BSTad; AIv; COApl; ENTm; MEApd; BA; MEAad; MEApv; SF; PAR2; COApm; CA1slm; FS; ILA; }
+PBls -> {DMH; }
+SFO -> {BSTfu; MEPO; PVHmpd; DMH; PVHam; SO; PVHlp; PVHap; MPN; PVHpml; SI; LHA; PVHmpv; MPO; ZI; PVHdp; ILA; PVHpmm; PVHpv; }
+RCH -> {PVI; LSr; MEA; PAG; CA1; B; BSTif; PVHmpd; RERv; DMHp; PH; PT; PSCH; DMX; LHA; LP; PVpo; AHNp; LSv; AHNd; BSTtr; MGd; RE; LA; VMH; VMHvl; MEApd; DMH; PVT; LGvm; CEAc; VMHc; DMHa; LS; AHN; PVHmpv; AHNa; MM; SO; PVHap; PRC; PVp; SI; SUMm; PAGdl; PBlc; PVHdp; LGvl; NTSm; SUBv; AVPV; MPNl; BSTav; PVHpv; RER; DMHv; MGm; BSTad; ARH; MGv; AHNc; AVP; PPN; CA3; RH; MPNm; MPO; BMAp; PAGvl; AHA; }
+ILA -> {AHNa; ENTl; CA1; SUB; RSP; MM; AV; BSTif; BSTmg; BSTdm; OT; SLC; NIc; TM; PRC; MPN; LPO; PT; NId; SI; SUMm; PERI; PIR; IMD; SUMl; BSTv; BSTtr; CEAl; BSTal; BSTav; VM; RER; NDB; DTN; MS; SUM; CP; RE; LDT; BSTad; VMH; MDm; ENTm; CLA; DMH; PVT; ACAv; MD; RH; MDl; IAM; CM; INC; MPO; NTS; FS; ACAd; AM; PMd; BSTdl; AHA; }
+ATN -> {POST; RT; SUB; PRE; PAR; }
+AAA -> {MEA; SUM; SUB; BSTad; ENTm; BSTdm; BSTsc; PH; BSTrh; PA; LHA; CA1slm; PERI; BSTal; BSTav; }
+SC -> {LH; PAG; EPI; RPA; RSP; RR; MRN; TRN; TM; PBG; FF; LHA; LP; LGd; IC; RT; R; SNr; MPT; PRT; VM; OP; MOs; SPVO; SNc; VMH; IO; PRN; PVT; PL; ACAv; DN; MD; STN; NPC; ZI; ICe; IOma; III; VISp; DR; RPO; PSV; VISam; MOp; LT; MT; VTA; ACA; ORBm; SGN; SPV; IGL; SS; VISlm; VAL; AUD; APN; MARN; CUN; SAG; ICc; LGvl; GRN; SPIV; PF; SN; ECU; RER; SPVI; PG; RO; CL; SSp; PPN; RM; LGv; MDl; PO; CM; LD; ACAd; NOT; ILA; SC; }
+}
