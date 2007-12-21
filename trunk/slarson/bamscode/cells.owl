@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://ccdb.ucsd.edu/BAMS/cells">
+<owl:Ontology xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="">
+<owl:imports rdf:resource="http://ccdb.ucsd.edu/SAO/1.1/SAO.owl"/>
+</owl:Ontology>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuron_extraocular_muscles">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuron, extraocular muscles</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">241</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_magnocellular_oxytocin_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine magnocellular oxytocin neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">101</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_magnocellular_vasopressin_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine magnocellular vasopressin neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_parvicellular_GRH_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine parvicellular GRH neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">244</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="spiny_bipolar_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiny bipolar neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="small_pyramidal_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small pyramidal neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">201</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="neurogliaform">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurogliaform</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">202</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="basket_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basket neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">203</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="triangular_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triangular neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">204</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="superficial_spiny_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial spiny neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">214</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="common_spiny_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">common spiny neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">215</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="spiny_neuron_with_chandelierlike_axon">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiny neuron with chandelier-like axon</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">216</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="projecting_star_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">projecting star neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">221</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="spiny_neurogliaform_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiny neurogliaform neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">218</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="beaded_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beaded neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">219</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="spiny_projection_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiny projection neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">220</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="fusiform_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fusiform neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">224</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="heterodendritic_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heterodendritic neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">225</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="Purkinje_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purkinje neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">107</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="cerebellar_granule_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerebellar granule cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">108</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="Golgi_neuron_big">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Golgi neuron, big</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">110</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="Golgi_neuron_small">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Golgi neuron, small</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">111</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="Lugaro_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lugaro neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="basket_neuron_cortex">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basket neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="candelabrum_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">candelabrum cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">117</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="unipolar_brush_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unipolar brush neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">118</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="cerebellar_molecular_layer_interneuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerebellar molecular layer interneuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">130</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="stellate_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stellate neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="descending_neuron_sympathetic_system">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descending neuron, sympathetic system</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">246</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_parvicellular_CRH_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine parvicellular CRH neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="descending_neuron_sympatheticparasympathetic_system">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descending neuron, sympathetic/parasympathetic system</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">247</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_parvicellular_DA_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine parvicellular DA neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">245</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_parvicellular_TRH_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine parvicellular TRH neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">242</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="motor_neuroendocrine_parvicellular_SOM_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor neuroendocrine parvicellular SOM neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">243</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="horizontal_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horizontal cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_9_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 9 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">88</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_8_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 8 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">87</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_7_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 7 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">86</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_6_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 6 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">85</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_5_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 5 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">84</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_4_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 4 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">83</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_3_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 3 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">82</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_2_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 2 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">81</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type_1_cone_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 1 cone bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="rod_bipolar_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod bipolar cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">79</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="stratified_diffuse_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratified diffuse amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="widefield_bistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wide-field bistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="narrowfield_bistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">narrow-field bistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">73</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type__c__widefield_unistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type (c) wide-field unistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">71</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type__b__widefield_unistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type (b) wide-field unistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type__a__widefield_unistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type (a) wide-field unistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">69</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type__b__narrowfield_unistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type (b) narrow-field unistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">67</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="type__a__narrowfield_unistratified_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type (a) narrow-field unistratified amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">66</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="interplexiform_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interplexiform cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="wide_field_diffuse_amacrine_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wide field diffuse amacrine cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">63</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_A2_inner">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell A2 inner</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_A2_outer">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell A2 outer</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_B1">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell B1</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_B2">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell B2</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_B3">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell B3</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_C1">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell C1</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_C2_inner">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell C2 inner</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_C2_outer">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell C2 outer</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_C_others">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell C others</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="retinal_ganglion_cell_A1">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell A1</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="large_ganglion_cell">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">large ganglion cell</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">131</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="_510_nmcone">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">510 nm-cone</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">191</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="_360_nmcone">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">360 nm-cone</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">192</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="simple_bipolar_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple bipolar neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">235</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="monopolar_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monopolar neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">236</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="curly_bipolar_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curly bipolar neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">237</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="radial_multipolar_neuron">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial multipolar neuron</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">238</bams_cell_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="spiny_neuron_SCN">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Neuron"/>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiny neuron SCN</rdfs:label>
+<bams_cell_id xmlns="http://ccdb.ucsd.edu/BAMS/cells#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">239</bams_cell_id>
+</owl:Class>
+<owl:AnnotationProperty xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="bams_cell_id"/>
+</rdf:RDF>

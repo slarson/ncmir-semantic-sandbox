@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://ccdb.ucsd.edu/BAMS/molecules">
+<owl:Ontology xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="">
+<owl:imports rdf:resource="http://ccdb.ucsd.edu/SAO/1.1/SAO.owl"/>
+</owl:Ontology>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="beta2_subunit_nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta2 nAChR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta2 subunit nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha4-1_subunit_nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha4-1 nAChR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha4-1 subunit nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha4-2_subunit_nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha4-2 nAChR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha4-2 subunit nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="sulfhydryl_oxidase">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QSOX</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfhydryl oxidase</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="androgen_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">androgen receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="oxytocin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxy</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxytocin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="vasopressin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAS</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vasopressin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="GAD67">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAD67</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAD67</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="GAD65">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAD65</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAD65</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha3_subunit_nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha3 nAChR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha3 subunit nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nAChR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha2_subunit_nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha2 nAChR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha2 subunit nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="beta1_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta1 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta1 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha1_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha1 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha1 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">52</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="gamma2_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma2 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma2 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">62</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="beta2_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta2 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta2 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">59</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="beta3_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta3 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta3 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="dopamine_receptor_D1">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D1</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dopamine receptor D1</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="dopamine_receptor_D2">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D2</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dopamine receptor D2</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">66</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="muscarininc_receptor_subtype_M2">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M2</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muscarininc receptor subtype M2</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha3_glycine_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha3 GlyR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha3 glycine receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="beta_glycine_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta GlyR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta glycine receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">81</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="gephyrin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gephyrin</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gephyrin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">82</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="parvalbumin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PaV</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parvalbumin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">87</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="protein_kinase_C_alpha">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKC-alpha</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein kinase C alpha</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">88</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="protein_kinase_C_beta">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKC-beta</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein kinase C beta</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">89</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="protein_kinase_C_epsilon">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKC-epsilon</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein kinase C epsilon</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">92</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="corticotropin-releasing_factor_receptor_1">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CRF-R1</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corticotropin-releasing factor receptor 1</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">94</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="glutamic_acid_decarboxylase">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAD</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glutamic acid decarboxylase</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="somatostatin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOM</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">somatostatin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="tyrosine_hydroxylase">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TH</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine hydroxylase</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="AMPA-GluR2_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GluR2</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMPA-GluR2 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="AMPA-GluR3_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GluR3</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMPA-GluR3 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="AMPA-GluR1_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GluR1</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMPA-GluR1 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="AMPA-GluR4_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GluR4</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMPA-GluR4 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="KA-GluR5_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GluR5</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KA-GluR5 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="KA-KA1_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KA1</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KA-KA1 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">43</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="NR1_NMDA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR1</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR1 NMDA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="NR2A_NMDA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2A</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2A NMDA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="histamine_H3_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H3</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histamine H3 receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">71</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha7_subunit_nicotinic_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha7</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha7 subunit nicotinic receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">73</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="metabotropic_glutamate_receptor_1">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mGluR1</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabotropic glutamate receptor 1</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">84</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="calbindin_D28K">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CaB</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calbindin D28K</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">86</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="KA-GluR6_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GluR6</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KA-GluR6 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="KA-KA2_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KA2</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KA-KA2 subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">44</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="NR2C_NMDA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2C</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2C NMDA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">49</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha6_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha6 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha6 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="delta_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delta GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delta GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">63</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha5_GABA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha5 GABA</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha5 GABA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="calretinin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CART</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calretinin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">83</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="enkephalin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENK</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enkephalin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="metabotropic_glutamate_receptor_3">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mGluR3</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabotropic glutamate receptor 3</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">85</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="NR2B_NMDA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2B</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2B NMDA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">48</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="NR2D_NMDA_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2D</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NR2D NMDA receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="alpha1_glycine_receptor_subunit">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha1 GlyR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha1 glycine receptor subunit</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="urocortin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UCN</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urocortin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">93</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="estrogen_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ER</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estrogen receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="substance_P_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">substance P receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="melanin-concentrating_hormone">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCH</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melanin-concentrating hormone</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="hypocretinorexin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H/O</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypocretin/orexin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="dynorphin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DYN</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynorphin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="mineralocorticoid_receptor">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MR</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mineralocorticoid receptor</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="substance_P">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SP</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">substance P</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="neurotensin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NT</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurotensin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="growth_hormone-releasing_hormone">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRH</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growth hormone-releasing hormone</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="methionin-enkephalin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">met-ENK</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methionin-enkephalin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="leucine-enkephalin">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leu-ENK</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucine-enkephalin</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="corticotropin-releasing_hormone">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CRH</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corticotropin-releasing hormone</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bams_molecule_id>
+</owl:Class>
+<owl:Class xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="neuropeptide_Y">
+<rdfs:subClassOf xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ccdb.ucsd.edu/SAO/1.1#Molecule"/>
+<sao:abbreviation xmlns:sao="http://ccdb.ucsd.edu/SAO/1.1#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPY</sao:abbreviation>
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuropeptide Y</rdfs:label>
+<bams_molecule_id xmlns="http://ccdb.ucsd.edu/BAMS/molecules#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27</bams_molecule_id>
+</owl:Class>
+<owl:AnnotationProperty xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:ID="bams_molecule_id"/>
+</rdf:RDF>
