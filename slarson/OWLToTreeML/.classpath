@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/protege-libs/antlr-2.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/arq.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/arq-extra.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/commons-lang-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/concurrent.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/edtftpj-1.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/ekitspell.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/icu4j_3_4.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/iri.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/jcalendar.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/jdom.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/jena.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/jep-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/json.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/kazuki.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/lax.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/looks-2.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/lucene-core-2.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/owlsyntax.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/protege.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/protege-owl.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/stax-api-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/unicode_panel.jar"/>
+	<classpathentry kind="lib" path="lib/protege-libs/wstx-asl-3.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/prefuse.jar"/>
+	<classpathentry kind="lib" path="lib/serializer.jar"/>
+	<classpathentry kind="lib" path="lib/xalan.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
