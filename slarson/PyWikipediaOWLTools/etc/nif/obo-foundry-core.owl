@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  
+  xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+
+  xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+  xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+  
+  xmlns:obo_ro="http://www.obofoundry.org/ro/ro.owl#"
+  xmlns:obo_quality="http://purl.org/obo/obo-all/quality/quality.owl#"
+  
+  xmlns="http://purl.org/nbirn/birnlex/ontology/obo-foundry/core/obo-foundry-core.owl#"
+  xml:base="http://purl.org/nbirn/birnlex/ontology/obo-foundry/core/obo-foundry-core.owl">
+  
+  <!-- IMPORTANT NOTE: re: explicit NAMESPACE declarations
+    
+    1) It's good practice to declare the default namespace (xmlns=""), as it provides an explicit context for any element reference in this
+    OWL file that isn't given an explicit namespace prefix.
+    
+    2) Note the default namespace (xmlns="") is NOT the same as the BASE namespace (xml:base), which is the base for forming URIs to 
+    any entities defined within this OWL file and can be considered the base URL for this ontology.  They are often the same, 
+    but there is no requirement they be the same.  In other words, if you were to set the default to the OWL spec 
+    (e.g., xmlsns="http://www.w3.org/2002/07/owl#"), then all elements named without a prefix will be assumed to come from 
+    the OWL spec and not assumed to be defined in this document. Only when the default (xmlns="") and the base (xml:base="") are 
+    identical, will it be assumed elements without a prefix must defined in the body of this file.
+    
+    3) If you don't NEED to use a namespace in your OWL file, DO NOT create it, as its likely to just create compatibility problems
+    that will vary depending on the tool you use. It MAY be OK to creat namespace declaration to anticipate those namespaces used 
+    by other ontologies included via owl:imports.       
+  -->
+  
+  <owl:Ontology rdf:about="">
+    <protege:defaultLanguage>en</protege:defaultLanguage>
+
+    <!-- Chris Mungall's BFO to OBO core bridge files -->
+    <!-- These URIs need to be specified as given below, http://purl.org/obo/obo-all/ro_bfo_bridge which is used by OBI won't resolve to an OWL file -->
+    <!-- Temporarily using birnlex versions of these bridges, so I can use v1.1 of BFO -->
+    <owl:imports rdf:resource="http://purl.org/nbirn/birnlex/ontology/bfo/ro_bfo_bridge.owl"/>
+    <owl:imports rdf:resource="http://purl.org/nbirn/birnlex/ontology/bfo/quality_bfo_bridge.owl"/>
+    <!-- 
+    <owl:imports rdf:resource="http://purl.org/obo/obo-all/ro_bfo_bridge/ro_bfo_bridge.owl"/>
+    <owl:imports rdf:resource="http://purl.org/obo/obo-all/quality_bfo_bridge/quality_bfo_bridge.owl"/>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/nbirn/birnlex/ontology/bfo/ro_bfo_bridge.owl"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/nbirn/birnlex/ontology/bfo/quality_bfo_bridge.owl"/>
+    </owl:imports>
+    -->
+    
+    <!--
+            THIS IS ONLY NEEDED FOR IMPORTING THE OLD OBI, SO PLACE THIS IN BIRNLEX-INVESTIGATION
+            
+            <owl:imports rdf:resource="http://purl.org/nbirn/birnlex/ontology/bfo/bfo_1.0_to_1.1_bridge.owl"/>
+            
+      -->
+    
+    <!-- BFO -->
+    <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    
+    <!-- AnnotationProperties -->
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/protege"/>
+  
+  </owl:Ontology>
+  <!-- Pellet v1.5.0 recommended including these declarations to help meet OWL-DL species requirements -->
+  <rdf:Description rdf:about="http://purl.org/nbirn/birnlex/ontology/bfo/ro_bfo_bridge.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/nbirn/birnlex/ontology/bfo/quality_bfo_bridge.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://protege.stanford.edu/plugins/owl/protege">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  
+</rdf:RDF>

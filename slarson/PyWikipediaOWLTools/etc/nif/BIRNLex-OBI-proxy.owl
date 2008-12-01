@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:core="http://www.w3.org/2004/02/skos/core#"
+    
+    xmlns:obo_annot="http://purl.org/nbirn/birnlex/ontology/annotation/OBO_annotation_properties.owl#"
+    xmlns:birn_annot="http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#"
+    
+    xmlns:birn_obo_ubo="http://purl.org/nbirn/birnlex/ontology/BIRNLex-OBO-UBO.owl#"
+    
+    xmlns="http://purl.org/nbirn/birnlex/ontology/BIRNLex-OBI-proxy.owl#"
+    xml:base="http://purl.org/nbirn/birnlex/ontology/BIRNLex-OBI-proxy.owl">
+    
+    <owl:Ontology rdf:about="">
+        <dc:title>BIRNLex-OBI-proxy</dc:title>
+        <dc:subject>The BIRN project lexicon</dc:subject>
+        <dc:creator>The BIRN Ontology Task Force</dc:creator>
+        
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <owl:versionInfo>1.3.1</owl:versionInfo>
+        
+        <protege:defaultLanguage>en</protege:defaultLanguage>
+        
+        <dc:contributor>Jeff Grethe</dc:contributor>
+        <dc:contributor>Maryann Martone</dc:contributor>
+        <dc:contributor>Carol Bean</dc:contributor>
+        <dc:contributor>Christine Fennema-Notestine</dc:contributor>
+        <dc:contributor>Bill Bug</dc:contributor>
+        <dc:contributor>Amarnath Gupta</dc:contributor>
+        <dc:contributor>David Kennedy</dc:contributor>
+        <dc:contributor>Jessica Turner</dc:contributor>
+        
+        <owl:imports rdf:resource="http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl"/>
+        <owl:imports rdf:resource="http://purl.org/nbirn/birnlex/ontology/BIRNLex-OBO-UBO.owl"/>
+         
+        <core:editorialNote>Using birnlex IDs starting with 11000.</core:editorialNote>
+    
+        <core:definition>The BIRN Project lexicon uses this file as a temporary proxy for classes from the Ontology of Biomedical Investigation (OBI).  These classes will be replaced by their OBI equivalents, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:definition>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="#birnlex_11000">
+        <rdfs:label>Non-realizable information entity</rdfs:label>
+        <core:prefLabel>Non-realizable information entity</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_295</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11001">
+        <rdfs:label>Information content entity</rdfs:label>
+        <core:prefLabel>Information content entity</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11000"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_342</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11002">
+        <rdfs:label>Data object</rdfs:label>
+        <core:prefLabel>Data object</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11001"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_305</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11003">
+        <rdfs:label>Value</rdfs:label>
+        <core:prefLabel>Value</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11002"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_18</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11004">
+        <rdfs:label>Quantitative value</rdfs:label>
+        <core:prefLabel>Quantitative value</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11003"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_147</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11005">
+        <rdfs:label>Image</rdfs:label>
+        <core:prefLabel>Image</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11002"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_325</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11006">
+        <rdfs:label>Data set</rdfs:label>
+        <core:prefLabel>Data set</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11002"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_43</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11007">
+        <rdfs:label>Information entity</rdfs:label>
+        <core:prefLabel>Information entity</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_344</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11008">
+        <rdfs:label>Investigation design</rdfs:label>
+        <core:prefLabel>Investigation design</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11007"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_335</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11009">
+        <rdfs:label>Algorithm</rdfs:label>
+        <core:prefLabel>Algorithm</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11007"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_270</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11010">
+        <rdfs:label>Protocol</rdfs:label>
+        <core:prefLabel>Protocol</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11007"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_272</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11011">
+        <rdfs:label>Digital entity</rdfs:label>
+        <core:prefLabel>Digital entity</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_306</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11012">
+        <rdfs:label>Binary executable</rdfs:label>
+        <core:prefLabel>Binary executable</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11011"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_351</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_1_2</obo_annot:nifID>
+        <obo_annot:synonym>software resource</obo_annot:synonym>
+        <obo_annot:synonym>software program</obo_annot:synonym>
+        <obo_annot:synonym>program</obo_annot:synonym>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11013">
+        <rdfs:label>Disease</rdfs:label>
+        <core:prefLabel>Disease</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_155</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_8.3</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11014">
+        <rdfs:label>Investigation administration role</rdfs:label>
+        <core:prefLabel>Investigation administration role</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_176</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11015">
+        <rdfs:label>Investigator</rdfs:label>
+        <core:prefLabel>Investigator</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11014"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_288</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11016">
+        <rdfs:label>Role in protocol application</rdfs:label>
+        <core:prefLabel>Role in protocol application</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_343</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11017">
+        <rdfs:label>Control role</rdfs:label>
+        <core:prefLabel>Control role</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11016"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_171</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11018">
+        <rdfs:label>Negative control role</rdfs:label>
+        <core:prefLabel>Negative control role</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11017"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_173</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11019">
+        <rdfs:label>Reagent role</rdfs:label>
+        <core:prefLabel>Reagent role</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_328</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_1_3.2</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11020">
+        <rdfs:label>Reporter role</rdfs:label>
+        <core:prefLabel>Reporter role</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11019"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_289</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11033">
+        <rdfs:label>Detector role</rdfs:label>
+        <core:prefLabel>Detector role</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11019"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_323</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11021">
+        <rdfs:label>Planned process</rdfs:label>
+        <core:prefLabel>Planned process</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_600062</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11022">
+        <rdfs:label>Protocol application</rdfs:label>
+        <core:prefLabel>Protocol application</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11021"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_69</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11023">
+        <rdfs:label>Material transformation</rdfs:label>
+        <core:prefLabel>Material transformation</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11022"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_94</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11024">
+        <rdfs:label>Data transformation</rdfs:label>
+        <core:prefLabel>Data transformation</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11022"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_95</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11025">
+        <rdfs:label>Assay</rdfs:label>
+        <core:prefLabel>Assay</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11022"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_70</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11026">
+        <rdfs:label>Imaging assay</rdfs:label>
+        <core:prefLabel>Imaging assay</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11025"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_185</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11027">
+        <rdfs:label>Entity of organismal origin</rdfs:label>
+        <core:prefLabel>Entity of organismal origin</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nbirn/birnlex/ontology/BIRNLex-OBO-UBO.owl#birnlex_5"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_133</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_1_3.5</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11028">
+        <rdfs:label>Artefact object</rdfs:label>
+        <core:prefLabel>Artefact object</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Object"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_47</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11029">
+        <rdfs:label>Cardinal part of instrument</rdfs:label>
+        <core:prefLabel>Cardinal part of instrument</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11028"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_36</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11034">
+        <rdfs:label>Device</rdfs:label>
+        <core:prefLabel>Device</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11028"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_400002</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11035">
+        <rdfs:label>Instrument</rdfs:label>
+        <core:prefLabel>Instrument</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11034"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_400003</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_1_3.1</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11030">
+        <rdfs:label>Platform</rdfs:label>
+        <core:prefLabel>Platform</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_50</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11031">
+        <rdfs:label>Microarray platform</rdfs:label>
+        <core:prefLabel>Microarray platform</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11030"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_52</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_7_5.1</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11032">
+        <rdfs:label>Liquid chromatography mass spectrometry platform</rdfs:label>
+        <core:prefLabel>Liquid chromatography mass spectrometry platform</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11030"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_51</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11036">
+        <rdfs:label>Cell line</rdfs:label>
+        <core:prefLabel>Cell line</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11027"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_129</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_1_3.3</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11037">
+        <rdfs:label>Journal article</rdfs:label>
+        <core:prefLabel>Journal article</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11038"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_275</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11038">
+        <rdfs:label>Narrative object</rdfs:label>
+        <core:prefLabel>Narrative object</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11001"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_300</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_7_12</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11042">
+        <rdfs:label>Report</rdfs:label>
+        <core:prefLabel>Report</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11038"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_322</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_7_12</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11039">
+        <rdfs:label>Comment</rdfs:label>
+        <core:prefLabel>Comment</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11038"/>
+        <obo_annot:synonym>Note</obo_annot:synonym>
+        <obo_annot:nifID>_4_6.3</obo_annot:nifID>
+        <obo_annot:nifID>_7_12</obo_annot:nifID>
+        <obo_annot:createdDate>2007-10-10</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-10</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11041">
+        <rdfs:label>Clinical finding</rdfs:label>
+        <core:prefLabel>Clinical finding</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11038"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_286</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+        <obo_annot:nifID>_7_12.1</obo_annot:nifID>
+    </owl:Class>
+    <owl:Class rdf:about="#birnlex_11040">
+        <rdfs:label>Investigation record</rdfs:label>
+        <core:prefLabel>Investigation record</core:prefLabel>
+        <rdfs:subClassOf rdf:resource="#birnlex_11042"/>
+        <obo_annot:createdDate>2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate>2007-10-05</obo_annot:modifiedDate>
+        <birn_annot:hasBirnlexCurator>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#Bill_Bug</birn_annot:hasBirnlexCurator>
+        <birn_annot:hasCurationStatus>http://purl.org/nbirn/birnlex/ontology/annotation/BIRNLex_annotation_properties.owl#graph_position_temporary</birn_annot:hasCurationStatus>
+        <obo_annot:externalSourceId>OBI_46</obo_annot:externalSourceId>
+        <core:editorialNote>This is a proxy class to be replaced by its OBI equivalent, once there is an official release built off BFO v1.1 that can be successfully classified using Pellet v1.5.0 in Protege.</core:editorialNote>
+    </owl:Class>
+    
+</rdf:RDF>

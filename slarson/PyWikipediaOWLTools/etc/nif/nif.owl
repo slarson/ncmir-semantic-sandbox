@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:p1="http://purl.org/obo/owl/sequence#"
+    xmlns:p3="http://purl.org/nbirn/birnlex/ontology/BIRNLex-Disease.owl#"
+    xmlns:j.0="http://purl.org/nbirn/birnlex/ontology/annotation/OBO_annotation_properties.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:p2="http://purl.org/nbirn/birnlex/ontology/BIRNLex-Investigation.owl#"
+    xmlns:j.2="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xml:base="http://www.owl-ontologies.com/unnamed.owl">
+  <owl:Ontology rdf:about="">
+    <j.0:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2007-09-04</j.0:createdDate>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dan Gardner (dan@aplysia.med.cornell.edu)</dc:contributor>
+    <j.2:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Neuroscience Informatics Framework (NIF) knowledge resource including the lexicon used to index all data repositories and literature corpi indexed in NIF.</j.2:definition>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/nbirn/birnlex/ontology/BIRNLex-Disease.owl"/>
+    </owl:imports>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NIF</dc:title>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >0.5</owl:versionInfo>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Maryann Martone (maryann@ncmir.ucsd.edu)</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bill Bug (William.Bug@drexelmed.edu)</dc:contributor>
+    <j.1:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</j.1:defaultLanguage>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The NIF Project Team</dc:creator>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://ccdb.ucsd.edu/SAO/1.2"/>
+    </owl:imports>
+    <j.0:modifiedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2007-09-04</j.0:modifiedDate>
+    <dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Neuroscience Informatics Framework lexicon</dc:subject>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/obo/owl/sequence"/>
+    </owl:imports>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Giorgio Ascoli (ascoli@gmu.edu)</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gordon Shepherd (gordon.shepherd@yale.edu)</dc:contributor>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/nif/ontology/NIF-Cell.owl"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/nbirn/birnlex/ontology/BIRNLex-Investigation.owl"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.org/nif/ontology/NIF-Molecule.owl"/>
+    </owl:imports>
+  </owl:Ontology>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 120)  http://protege.stanford.edu -->
