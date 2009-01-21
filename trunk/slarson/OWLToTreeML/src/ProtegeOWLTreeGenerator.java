@@ -47,6 +47,8 @@ public class ProtegeOWLTreeGenerator {
 	
     Tree g;
     HashMap<String,Cls> hm;
+    private int skippedClasses = 0;
+    private int handledClasses = 0;
    
 	Slot rdfsLabel;
     public ProtegeOWLTreeGenerator() {
@@ -91,7 +93,7 @@ public class ProtegeOWLTreeGenerator {
 			
 			/* load from web */
 			//JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://purl.org/nbirn/birnlex/ontology/BIRNLex-Anatomy.owl");
-    		JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://ontology.neuinfo.org/NIF/1.0/NIF1.0.owl");
+    		JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://ontology.neuinfo.org/NIF/nif.owl");
 			
 			/* load from disk strategy: */
 			//ProjectManager projectManager = ProjectManager.getProjectManager();
@@ -185,15 +187,16 @@ public class ProtegeOWLTreeGenerator {
     	label = "label";
     	prefix = null;
     	
-    	String[] propLabels = {"birn_annot:bonfireID", "j.0:acronym", "j.0:synonym", "j.0:modifiedDate", 
+    	String[] propLabels = {"birn_annot:bamsID", "birn_annot:bonfireID", "obo_annot:acronym", 
+    			"obo_annot:synonym", "obo_annot:modifiedDate", 
     			"birn_annot:birnlexDefinition", "core:definition", "core:prefLabel", 
-    			"birn_annot:hasCurationStatus", "j.0:UmlsCui", "rdfs:comment", 
-    			"birn_annot:neuronamesID", "j.0:hasAbbrevSource", "j.0:abbrev", 
-    			"j.0:definingCitation", "core:editorialNote", "j.0:externallySourcedDefinition", 
-    			"j.0:hasDefinitionSource", "core:example", "birn_annot:hasBirnlexCurator",
-    			"j.0:createdDate", "birn_annot:ncbiTaxScientificName", "birn_annot:ncbiTaxID",
-    			"birn_annot:gbifTaxonKeyID", "birn_annot:gbifID", "j.0:misspelling", 
-    			"birn_annot:itisID", "j.0:taxonomicCommonName"
+    			"birn_annot:hasCurationStatus", "obo_annot:UmlsCui", "rdfs:comment", 
+    			"birn_annot:neuronamesID", "obo_annot:hasAbbrevSource", "obo_annot:abbrev", 
+    			"obo_annot:definingCitation", "core:editorialNote", "obo_annot:externallySourcedDefinition", 
+    			"obo_annot:hasDefinitionSource", "core:example", "birn_annot:hasBirnlexCurator",
+    			"obo_annot:createdDate", "birn_annot:ncbiTaxScientificName", "birn_annot:ncbiTaxID",
+    			"birn_annot:gbifTaxonKeyID", "birn_annot:gbifID", "obo_annot:misspelling", 
+    			"birn_annot:itisID", "obo_annot:taxonomicCommonName"
     			};
     	
     	List<Slot> slots = new ArrayList<Slot>();
@@ -225,6 +228,8 @@ public class ProtegeOWLTreeGenerator {
 			//get a node
 			SubsumptionTreeNode n = q.pop();
 			
+			//we are handling a class...add it to the sum
+			handledClasses++;
 						
             //get the label and prefix for this node
 			label = (String)n.getCls().getDirectOwnSlotValue(rdfsLabel);
@@ -253,6 +258,7 @@ public class ProtegeOWLTreeGenerator {
 				//don't render items that have the same parent label as itself
 				//need to investigate why these exist (NIF-molecule)
 				if (parentLabel.equals(label)){
+					skippedClasses++;
 					continue;
 				}
 			}
@@ -364,6 +370,8 @@ public class ProtegeOWLTreeGenerator {
 			s = s.replaceAll("&", "&amp;");
     		s = s.replaceAll("\"", "&quot;");
     		s = s.replaceAll("\'", "&apos;");
+    		s = s.replaceAll("\\[", "(");
+    		s = s.replaceAll("\\]", ")");
 			return new String(s.getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
@@ -376,5 +384,8 @@ public class ProtegeOWLTreeGenerator {
     	
     	ProtegeOWLTreeGenerator potg = new ProtegeOWLTreeGenerator();
     	potg.loadOntology();
+    	System.out.println("Ontology loading completed.");
+    	System.out.println("Loaded " + potg.handledClasses + " classes");
+    	System.out.println("Skipped " + potg.skippedClasses + " classes");
     }
 }
