@@ -1,5 +1,13 @@
 #from rdflib import Graph, URIRef, Literal, Namespace, RDF
-import wikipedia, login, category, string
+import sys
+import subprocess
+
+sys.path.append("../../pywikipedia/")
+sys.path.append("../../pywikipedia/userinterfaces")
+sys.path.append("../../pywikipedia/families")
+sys.path.append("families")
+
+import wikipedia, login, string
 
 from xml.sax import saxutils
 from xml.sax import make_parser
@@ -16,7 +24,12 @@ class WriteWikipediaFromTreeML(ContentHandler):
         self.clearVars()
         self.ow = wikipedia.Site('en', 'nif')
         login.LoginManager('bot', 'NifBot', self.ow)
+
+	print "\nLogged in to Neurolex.org.  Ready to start updating!"
+
         self.unchanged = list()
+	self.iterations = 10
+	self.currentIteration = 0
         
     def startElement(self, elName, attrs):
        
@@ -40,9 +53,9 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.parent.append(value)
             elif name == "birn_annot:birnlexDefinition":
                 self.definition.append(value)
-            elif name == "sao:definition":
+            elif name == "core:definition":
                 self.definition.append(value)
-            elif name == "j.2:prefLabel":
+            elif name == "core:prefLabel":
                 self.prefLabel.append(value)
             elif name == "j.0:nifID":
                 self.nifID.append(value)
@@ -60,7 +73,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.abbrev.append(value)
             elif name == "j.0:definingCitation":
                 self.definingCitation.append(value)
-            elif name == "j.2:editorialNote":
+            elif name == "core:editorialNote":
                 self.editorialNote.append(value)
             elif name == "j.0:externallySourcedDefinition":
                 self.externallySourcedDefinition.append(value)
@@ -68,7 +81,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.definitionSource.append(value)
             elif name == "j.0:modifiedDate":
                 self.modifiedDate.append(value)
-            elif name == "j.2:example":
+            elif name == "core:example":
                 self.example.append(value)
             elif name == "birn_annot:hasBirnlexCurator":
                 self.curator.append(value)
@@ -98,14 +111,20 @@ class WriteWikipediaFromTreeML(ContentHandler):
             
             self.writeWikipediaPage()
             self.clearVars()
-          
+
+    #get the second part of the URI after the hash mark
+    def stripURI(self, URI):
+	splitArray = URI.split('#')
+	return splitArray[1];
+
     def writeWikipediaPage(self):
-        
+	
+	if self.currentIteration > self.iterations:
+	    print "\nREACHED MAX ITERATIONS!"
+	    wikipedia.stopme()
+	    quit
+
         p = wikipedia.Page(self.ow, "Category:" + self.label)
-        #if p.exists():
-        #    print "there is a category ", self.label, " page"
-        #    self.unchanged.append(self.label)
-        #else :
         h = ""
         
         for item in self.parent:
@@ -124,8 +143,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
             h += "\n\n* Synonym: [[synonym::" + item + "]]"
     
         for item in self.neuronamesID:
-            h += "\n\n* Neuro Names ID: [[neuronamesID::" + item + "]]"
-            h += "\n\n* Neuro Names Link: [[neuronamesLink::http://braininfo.rprc.washington.edu/Scripts/hiercentraldirectory.aspx?ID=" + item + "]]"
+            h += "\n\n* Neuro Names ID: [[neuronamesID::" + item + "| ]][[neuronamesLink::http://braininfo.rprc.washington.edu/Scripts/hiercentraldirectory.aspx?ID=" + item + "| " + item + "]]"
     
         for item in self.editorialNote:
             h += "\n\n* Editorial Note: [[editorialNote::" + item + "]]"
@@ -134,7 +152,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
             h += "\n\n* Externally Sourced Definition: [[externallySourcedDefinition::" + item + "]]"
             
         for item in self.definitionSource:
-            h += "\n\n* Definition Source: [[definitionSource::" + item + "]]"
+            h += "\n\n* Definition Source: [[definitionSource::" + self.stripURI(item) + "]]"
     
         for item in self.definingCitation:
             h += "\n\n* Definition Citation: [[definingCitation::" + item + "]]"
@@ -150,19 +168,19 @@ class WriteWikipediaFromTreeML(ContentHandler):
             h += "\n\n* Abbreviation: [[abbrev::" + item + "]]"
             
         for item in self.abbrevSource:
-            h += "\n\n* Abbreviation Source: [[abbrevSource::" + item + "]]"
+            h += "\n\n* Abbreviation Source: [[abbrevSource::" + self.stripURI(item) + "]]"
             
-        for item in self.modifiedDate:
-           h += "\n\n* Modified Date: [[modifiedDate::" + item + "]]"
+        #for item in self.modifiedDate:
+        #   h += "\n\n* Modified Date: [[modifiedDate::" + item + "]]"
             
         for item in self.curationStatus :
-            h += "\n\n* Curation Status: [[curationStatus::" + item + "]]"
+            h += "\n\n* Curation Status: [[curationStatus::" + self.stripURI(item) + "]]"
             
         for item in self.example:
             h += "\n\n* Example: [[example::" + item + "]]"
             
-        for item in self.curator:
-            h += "\n\n* Curator: [[curator::" + item + "]]"
+        #for item in self.curator:
+        #    h += "\n\n* Curator: [[curator::" + self.stripURI(item) + "]]"
         
         for item in self.createdDate:
             h += "\n\n* Created Date: [[created::" + item + "]]"
@@ -188,21 +206,82 @@ class WriteWikipediaFromTreeML(ContentHandler):
         for item in self.commonName:
             h += "\n\n* Taxonomic Common Name: [[commonName::" + item + "]]"
 
-        print "New Version:"
-        print h.strip();
+	h += "\n\n==Query for more information=="
+	queryString = self.label.replace(" ", "%20")
+        queryString = self.label.replace("_", "%20")
+	h += "\n[http://nif-apps-stage.neuinfo.org/search?query=" + queryString + " Click here to find more about " + self.label.replace("_", "%20") + "]"
+
         if p.exists() :
             existingText = p.get()
-            print "Current Version:"
-            print existingText.strip()
             if h.strip() == existingText.strip():
                 print "Nothing to do!  Skipped page for ", self.label
             else:
-                p.put(h, "updated by NifBot")
+		print "Starting update!"
+		self.updatePage(p, h)
                 print "updated page for ", self.label
         else:
             p.put(h, "added by NifBot")
             print "created page for ", self.label
             
+    def updatePage(self, p, h):
+        
+    	currentRevision = p.get()
+
+        print "********Current Version of ", p.title()
+        print currentRevision.strip()
+
+	lastNifBotRevision = ''
+
+	for history in p.getVersionHistory():
+            # find the most recent revision by NifBot
+	    if history[2] == "NifBot":
+	    	lastNifBotRevision = p.getOldVersion(history[0])
+		break
+
+	# if there was no original NifBotRevision, flag it and quit
+	if lastNifBotRevision == '':
+	    print "COULD NOT FIND A PREVIOUS NIF BOT REVISION FOR ", p.title()
+	    exit
+
+	#write out the newest version, the last NifBot version, and the new version
+	# to the file system
+	FILE1 = open("lastNifBotRevision.txt", "w")
+	FILE1.writelines(lastNifBotRevision)
+	FILE1.close()
+
+	FILE2 = open("currentRevision.txt", "w")
+	FILE2.writelines(currentRevision)
+	FILE2.close()
+
+	FILE3 = open("newRevision.txt", "w")
+	FILE3.writelines(h)
+	FILE3.close()
+
+	#run diff3 on these three files to see if there will be conflicts.
+	cmd = "diff3 -E newRevision.txt lastNifBotRevision.txt currentRevision.txt"
+
+	# http://docs.python.org/library/subprocess.html
+	revisionChanges = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0]
+	
+	if revisionChanges == '':
+	    print "\n****SUCCESSFUL MERGE... NO MAJOR CONFLICTS"
+	else :
+	    #if the output from this diff is non-zero, log the diff as a conflict for
+	    # later manual inspection
+            print "\n*****MERGE HAD CONFLICTS.  CONFLICTS FOLLOW:\n"
+	    print revisionChanges	    
+	
+	#this call to diff3 actually does the merge
+	cmd = "diff3 -m newRevision.txt lastNifBotRevision.txt currentRevision.txt"
+
+	# http://docs.python.org/library/subprocess.html
+	mergedNewRevision = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0]
+
+	print "******SAVING THIS VERSION TO THE WIKI:"
+        print mergedNewRevision
+
+	#actually generate the content that you are going to save to the wiki, including the conflict statements.	
+        p.put(mergedNewRevision, "updated by NifBot")
             
     def clearVars(self):
         self.label = ""
@@ -237,6 +316,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
         self.commonName = list()
 
 if __name__ == '__main__':
+    print "PRINT TEST"
     # Create a parser
     parser = make_parser()
     
@@ -248,6 +328,9 @@ if __name__ == '__main__':
     
     #Tell the parser to use our handler
     parser.setContentHandler(dh)
+
+    #inform the log that we are ready to go!
+    print "STARTING UPDATE!"
     
     #parse the input
     parser.parse("NIF-tree.xml")
