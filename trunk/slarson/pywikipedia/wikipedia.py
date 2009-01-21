@@ -4795,6 +4795,8 @@ your connection is down. Retrying in %i minutes..."""
                 else:
                     xml = self.getUrl(self.get_address("Special:Allmessages")
                                         + "&ot=xml")
+		    xml = xml[2:]
+		    print xml[0:5]
                     # xml structure is :
                     # <messages lang="fr">
                     #    <message name="about">À propos</message>
@@ -4802,6 +4804,7 @@ your connection is down. Retrying in %i minutes..."""
                     # </messages>
                     if elementtree:
                         decode = xml.encode(self.encoding())
+			decode.strip()
                         tree = XML(decode)
                         self._mediawiki_messages = _dict([(tag.get('name').lower(), tag.text)
                                 for tag in tree.getiterator('message')])

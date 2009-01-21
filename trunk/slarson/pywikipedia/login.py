@@ -209,9 +209,9 @@ class LoginManager:
         if not self.password:
             # As we don't want the password to appear on the screen, we set
             # password = True
-            self.password = wikipedia.input(u'Password for user %s on %s:' % (self.username, self.site), password = True)
+            self.password = "nifbot"#wikipedia.input(u'Password for user %s on %s:' % (self.username, self.site), password = True)
 
-        self.password = self.password.encode(self.site.encoding())
+        self.password = "nifbot"#self.password.encode(self.site.encoding())
 
         wikipedia.output(u"Logging in to %s as %s" % (self.site, self.username))
         cookiedata = self.getCookie()
