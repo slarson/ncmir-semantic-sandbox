@@ -25,6 +25,7 @@ import edu.stanford.smi.protege.model.Cls;
 import edu.stanford.smi.protege.model.Project;
 import edu.stanford.smi.protege.model.Slot;
 import edu.stanford.smi.protege.util.ApplicationProperties;
+import edu.stanford.smi.protegex.owl.ProtegeOWL;
 import edu.stanford.smi.protegex.owl.jena.JenaOWLModel;
 import edu.stanford.smi.protegex.owl.ui.subsumption.AssertedSubsumptionTreePanel;
 import edu.stanford.smi.protegex.owl.ui.subsumption.SubsumptionTreeNode;
@@ -87,25 +88,16 @@ public class ProtegeOWLTreeGenerator {
 			System.getProperties().put("proxySet", "true");
 			System.getProperties().put("proxyPort", "8080");
 			System.getProperties().put("proxyHost", "http://webproxy.ucsd.edu/proxy.pl");
-			//JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://purl.org/nbirn/birnlex/ontology/BIRNLex-Anatomy.owl");
-    		//JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://purl.org/nif/ontology/nif.owl");
 			
+			/* load from web */
+			//JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://purl.org/nbirn/birnlex/ontology/BIRNLex-Anatomy.owl");
+    		JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://ontology.neuinfo.org/NIF/1.0/NIF1.0.owl");
+			
+			/* load from disk strategy: */
 			//ProjectManager projectManager = ProjectManager.getProjectManager();
-			//URI uri = new URI("file://C:\/Documents\and\ Settings\/stephen\/Desktop\/nifSaved\/nif.pprj");
-						
-			Project p = Project.loadProjectFromFile("C:/Documents and Settings/stephen/Desktop/nifSaved/nif.pprj", new ArrayList());
-						
-			//projectManager.loadProject(uri);
-			JenaOWLModel owlModel = (JenaOWLModel) p.getKnowledgeBase();
-					    			
-			/*
-			JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModel();
-			RepositoryManager rp = new RepositoryManager(owlModel);
-			File dir = new File("C:/Documents and Settings/stephen/Desktop/nifSaved");
-			rp.addGlobalRepository(new LocalFolderRepository(dir));
-			FileReader reader = new FileReader("C:/Documents and Settings/stephen/Desktop/nifSaved/nif.owl");			
-			owlModel.load(reader, FileUtils.langXMLAbbrev);
-    		*/
+			//Project p = Project.loadProjectFromFile("C:/Documents and Settings/stephen/Desktop/nifSaved/nif.pprj", new ArrayList());						
+			//JenaOWLModel owlModel = (JenaOWLModel) p.getKnowledgeBase();
+
     		
     		//must be done before getLabel() is run!!!
     		rdfsLabel = owlModel.getSlot("rdfs:label");
@@ -194,11 +186,11 @@ public class ProtegeOWLTreeGenerator {
     	prefix = null;
     	
     	String[] propLabels = {"birn_annot:bonfireID", "j.0:acronym", "j.0:synonym", "j.0:modifiedDate", 
-    			"birn_annot:birnlexDefinition", "sao:definition", "j.2:prefLabel", 
+    			"birn_annot:birnlexDefinition", "core:definition", "core:prefLabel", 
     			"birn_annot:hasCurationStatus", "j.0:UmlsCui", "rdfs:comment", 
     			"birn_annot:neuronamesID", "j.0:hasAbbrevSource", "j.0:abbrev", 
-    			"j.0:definingCitation", "j.2:editorialNote", "j.0:externallySourcedDefinition", 
-    			"j.0:hasDefinitionSource", "j.2:example", "birn_annot:hasBirnlexCurator",
+    			"j.0:definingCitation", "core:editorialNote", "j.0:externallySourcedDefinition", 
+    			"j.0:hasDefinitionSource", "core:example", "birn_annot:hasBirnlexCurator",
     			"j.0:createdDate", "birn_annot:ncbiTaxScientificName", "birn_annot:ncbiTaxID",
     			"birn_annot:gbifTaxonKeyID", "birn_annot:gbifID", "j.0:misspelling", 
     			"birn_annot:itisID", "j.0:taxonomicCommonName"
@@ -206,7 +198,12 @@ public class ProtegeOWLTreeGenerator {
     	
     	List<Slot> slots = new ArrayList<Slot>();
     	for (int i = 0; i < propLabels.length; i++) {
-    		slots.add(owlModel.getSlot(propLabels[i]));
+    		Slot s2 = owlModel.getSlot(propLabels[i]);
+    		if (s2 != null) {
+    			slots.add(s2);
+    		} else {
+    			System.out.println("WARNING: Slot " + propLabels[i] + " does not exist");
+    		}
     	}
     	
     	
