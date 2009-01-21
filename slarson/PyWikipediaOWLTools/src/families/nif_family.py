@@ -11,7 +11,7 @@ class Family(family.Family):
         self.name = 'nif'
 
         self.langs = {
-                'en': 'openccdb.org',
+                'en': 'neurolex.org',
         }
         self.namespaces[4] = {
             '_default': [u'NIF', self.namespaces[4]['_default']],
@@ -29,7 +29,7 @@ class Family(family.Family):
         return ''
 
     def path(self, code):
-        return '/ontowiki/index.php'
+        return '/wiki'
 
     def apipath(self, code):
         raise NotImplementedError(
