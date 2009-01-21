@@ -43,6 +43,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.label = value
             elif name == "id":
                 self.id.append(value)
+            elif name == "birn_annot:bamsID" :
+                self.bamsID.append(value) 
             elif name == "birn_annot:bonfireID" :
                 self.bonfireID.append(value) 
             elif name == "j.0:acronym":
@@ -145,6 +147,9 @@ class WriteWikipediaFromTreeML(ContentHandler):
         for item in self.neuronamesID:
             h += "\n\n* Neuro Names ID: [[neuronamesID::" + item + "| ]][[neuronamesLink::http://braininfo.rprc.washington.edu/Scripts/hiercentraldirectory.aspx?ID=" + item + "| " + item + "]]"
     
+	for item in self.bamsID:
+	    h += "\n\n* BAMS ID: [[bamsID::"+item+"| ]][[bamsLink::http://brancusi.usc.edu/bkms/brain/show-braing2.php?aidi="+item+"| "+item+"]]"
+
         for item in self.editorialNote:
             h += "\n\n* Editorial Note: [[editorialNote::" + item + "]]"
     
@@ -289,6 +294,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
         self.label = ""
         self.parent = list()
         self.id = list()
+        self.bamsID = list()
         self.bonfireID = list()
         self.acronym = list()
         self.synonym = list()
