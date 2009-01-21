@@ -209,7 +209,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	h += "\n\n==Query for more information=="
 	queryString = self.label.replace(" ", "%20")
         queryString = self.label.replace("_", "%20")
-	h += "\n[http://nif-apps-stage.neuinfo.org/search?query=" + queryString + " Click here to find more about " + self.label.replace("_", "%20") + "]"
+	h += "\n[http://nif-apps-stage.neuinfo.org/search?query=" + queryString + " Click here to find more about " + self.label.replace("_", " ") + "]"
 
         if p.exists() :
             existingText = p.get()
@@ -261,7 +261,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	cmd = "diff3 -E newRevision.txt lastNifBotRevision.txt currentRevision.txt"
 
 	# http://docs.python.org/library/subprocess.html
-	revisionChanges = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0]
+        p1 = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+	revisionChanges = p1.communicate()[0]
 	
 	if revisionChanges == '':
 	    print "\n****SUCCESSFUL MERGE... NO MAJOR CONFLICTS"
@@ -275,7 +276,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	cmd = "diff3 -m newRevision.txt lastNifBotRevision.txt currentRevision.txt"
 
 	# http://docs.python.org/library/subprocess.html
-	mergedNewRevision = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0]
+        p2 = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+	mergedNewRevision = p2.communicate()[0]
 
 	print "******SAVING THIS VERSION TO THE WIKI:"
         print mergedNewRevision
