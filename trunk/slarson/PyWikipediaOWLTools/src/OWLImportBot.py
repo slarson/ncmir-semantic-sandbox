@@ -213,7 +213,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
 
 	h += "\n\n==Query for more information=="
 	queryString = self.label.replace(" ", "%20")
-        queryString = self.label.replace("_", "%20")
+        queryString = queryString.replace("_", "%20")
 	h += "\n[http://nif-apps-stage.neuinfo.org/search?query=" + queryString + " Click here to find more about " + self.label.replace("_", " ") + "]"
 
         if p.exists() :
