@@ -47,9 +47,9 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.bamsID.append(value) 
             elif name == "birn_annot:bonfireID" :
                 self.bonfireID.append(value) 
-            elif name == "j.0:acronym":
+            elif name == "obo_annot:acronym":
                 self.acronym.append(value)
-            elif name == "j.0:synonym":
+            elif name == "obo_annot:synonym":
                 self.synonym.append(value) 
             elif name == "parent":
                 self.parent.append(value)
@@ -59,35 +59,35 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.definition.append(value)
             elif name == "core:prefLabel":
                 self.prefLabel.append(value)
-            elif name == "j.0:nifID":
+            elif name == "obo_annot:nifID":
                 self.nifID.append(value)
             elif name == "birn_annot:hasCurationStatus":
                 self.curationStatus.append(value)
-            elif name == "j.0:UmlsCui":
+            elif name == "obo_annot:UmlsCui":
                 self.umls.append(value)
             elif name == "rdfs:comment":
                 self.comment.append(value)
             elif name == "birn_annot:neuronamesID":
                 self.neuronamesID.append(value)
-            elif name == "j.0:hasAbbrevSource":
+            elif name == "obo_annot:hasAbbrevSource":
                 self.abbrevSource.append(value)
-            elif name == "j.0:abbrev":
+            elif name == "obo_annot:abbrev":
                 self.abbrev.append(value)
-            elif name == "j.0:definingCitation":
+            elif name == "obo_annot:definingCitation":
                 self.definingCitation.append(value)
             elif name == "core:editorialNote":
                 self.editorialNote.append(value)
-            elif name == "j.0:externallySourcedDefinition":
+            elif name == "obo_annot:externallySourcedDefinition":
                 self.externallySourcedDefinition.append(value)
-            elif name == "j.0:hasDefinitionSource":
+            elif name == "obo_annot:hasDefinitionSource":
                 self.definitionSource.append(value)
-            elif name == "j.0:modifiedDate":
+            elif name == "obo_annot:modifiedDate":
                 self.modifiedDate.append(value)
             elif name == "core:example":
                 self.example.append(value)
             elif name == "birn_annot:hasBirnlexCurator":
                 self.curator.append(value)
-            elif name == "j.0:createdDate":
+            elif name == "obo_annot:createdDate":
                 self.createdDate.append(value)
             elif name == "birn_annot:ncbiTaxScientificName":
                 self.taxName.append(value)
@@ -97,11 +97,11 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.taxKey.append(value)
             elif name == "birn_annot:gbifID":
                 self.gbifID.append(value)
-            elif name == "j.0:misspelling":
+            elif name == "obo_annot:misspelling":
                 self.misspelling.append(value) 
             elif name == "birn_annot:itisID":
                 self.itisID.append(value)
-            elif name == "j.0:taxonomicCommonName":
+            elif name == "obo_annot:taxonomicCommonName":
                 self.commonName.append(value)
         
         elif ((elName == 'branch') or (elName == 'leaf')) and (self.label != ""):
