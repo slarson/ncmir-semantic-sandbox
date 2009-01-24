@@ -18,6 +18,11 @@ from xml.sax.handler import ContentHandler
 # to openccdb.org/ontowiki.  The TreeML is too large to be loaded into memory, so
 # it is processed using a sax parser.
 # Tests to see if current page would be changed before updating.
+# Performs a diff comparison
+#
+# author: Stephen D. Larson
+# last modified: 01-21-09
+
 class WriteWikipediaFromTreeML(ContentHandler):
     
     def __init__(self):
@@ -271,24 +276,27 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	
 	if revisionChanges == '':
 	    print "\n****SUCCESSFUL MERGE... NO MAJOR CONFLICTS"
+
+	    #this call to diff3 actually does the merge
+	    cmd = "diff3 -m newRevision.txt lastNifBotRevision.txt currentRevision.txt"
+
+	    # http://docs.python.org/library/subprocess.html
+            p2 = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+	    mergedNewRevision = p2.communicate()[0]
+
+	    print "******SAVING THIS VERSION TO THE WIKI:"
+            print mergedNewRevision
+
+	    #actually generate the content that you are going to save to the wiki, including the conflict statements.	
+            p.put(mergedNewRevision, "updated by NifBot")
+
 	else :
 	    #if the output from this diff is non-zero, log the diff as a conflict for
 	    # later manual inspection
             print "\n*****MERGE HAD CONFLICTS.  CONFLICTS FOLLOW:\n"
 	    print revisionChanges	    
 	
-	#this call to diff3 actually does the merge
-	cmd = "diff3 -m newRevision.txt lastNifBotRevision.txt currentRevision.txt"
 
-	# http://docs.python.org/library/subprocess.html
-        p2 = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
-	mergedNewRevision = p2.communicate()[0]
-
-	print "******SAVING THIS VERSION TO THE WIKI:"
-        print mergedNewRevision
-
-	#actually generate the content that you are going to save to the wiki, including the conflict statements.	
-        p.put(mergedNewRevision, "updated by NifBot")
             
     def clearVars(self):
         self.label = ""
