@@ -48,6 +48,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.label = value
             elif name == "id":
                 self.id.append(value)
+            elif name == "duplicateId":
+                self.duplicateId.append(value)
             elif name == "birn_annot:bamsID" :
                 self.bamsID.append(value) 
             elif name == "birn_annot:bonfireID" :
@@ -108,15 +110,12 @@ class WriteWikipediaFromTreeML(ContentHandler):
                 self.itisID.append(value)
             elif name == "obo_annot:taxonomicCommonName":
                 self.commonName.append(value)
-        
-        elif ((elName == 'branch') or (elName == 'leaf')) and (self.label != ""):
-            self.writeWikipediaPage()
-            self.clearVars()
-            
+                   
     def endElement(self, elName):
         if elName == 'leaf' and self.label != "":
-            
+    
             self.writeWikipediaPage()
+	    self.writeRedirectIdPage()
             self.clearVars()
 
     #get the second part of the URI after the hash mark
@@ -124,13 +123,28 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	splitArray = URI.split('#')
 	return splitArray[1];
 
+    def writeRedirectIdPage(self):
+   
+        p = wikipedia.Page(self.ow, self.id)
+        h = ""
+        
+        for item in self.id:
+            h += "#REDIRECT [[:Category:" + self.label + "]]"
+
+        if p.exists() :
+            existingText = p.get()
+            if h.strip() == existingText.strip():
+                print "Nothing to do!  Skipped page for ", self.label
+            else:
+		p.put(h, "updated by NifBot2")
+                print "updated page for ", self.label
+        else:
+            p.put(h, "added by NifBot2")
+            print "created page for ", self.label
+
+    
     def writeWikipediaPage(self):
 	
-	if self.currentIteration > self.iterations:
-	    print "\nREACHED MAX ITERATIONS!"
-	    wikipedia.stopme()
-	    quit
-
         p = wikipedia.Page(self.ow, "Category:" + self.label)
         h = ""
         
@@ -216,6 +230,10 @@ class WriteWikipediaFromTreeML(ContentHandler):
         for item in self.commonName:
             h += "\n\n* Taxonomic Common Name: [[commonName::" + item + "]]"
 
+        for item in self.duplicateId:
+            h += "\n\n==Duplicates=="
+            h += "\n\n* This item is duplicated with: [" + item + "]"
+
 	h += "\n\n==Query for more information=="
 	queryString = self.label.replace(" ", "%20")
         queryString = queryString.replace("_", "%20")
@@ -230,7 +248,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
 		self.updatePage(p, h)
                 print "updated page for ", self.label
         else:
-            p.put(h, "added by NifBot")
+            p.put(h, "added by NifBot2")
             print "created page for ", self.label
             
     def updatePage(self, p, h):
@@ -299,7 +317,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
     def clearVars(self):
         self.label = ""
         self.parent = list()
-        self.id = list()
+        self.id = list)(
+        self.duplicateId = list()
         self.bamsID = list()
         self.bonfireID = list()
         self.acronym = list()
