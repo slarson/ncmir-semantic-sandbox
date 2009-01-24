@@ -293,10 +293,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	else :
 	    #if the output from this diff is non-zero, log the diff as a conflict for
 	    # later manual inspection
-            print "\n*****MERGE HAD CONFLICTS.  CONFLICTS FOLLOW:\n"
+            print "\n*****MERGE FOR " + p.title() + "HAD CONFLICTS.  CONFLICTS FOLLOW:\n"
 	    print revisionChanges	    
-	
-
             
     def clearVars(self):
         self.label = ""
