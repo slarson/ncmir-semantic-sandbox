@@ -1,8 +1,10 @@
 
 
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -12,17 +14,11 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Stack;
 
 import javax.swing.tree.TreeModel;
 
-import jena.schemagen;
-
-import prefuse.data.Node;
-import prefuse.data.Tree;
 import edu.stanford.smi.protege.model.Cls;
-import edu.stanford.smi.protege.model.Project;
 import edu.stanford.smi.protege.model.Slot;
 import edu.stanford.smi.protege.util.ApplicationProperties;
 import edu.stanford.smi.protegex.owl.ProtegeOWL;
@@ -45,38 +41,32 @@ import edu.stanford.smi.protegex.owl.ui.subsumption.SubsumptionTreeRoot;
  */
 public class ProtegeOWLTreeGenerator {
 	
-    Tree g;
-    HashMap<String,Cls> hm;
+    
     private int skippedClasses = 0;
+    private int skippedForNoLabel = 0;
     private int handledClasses = 0;
+    private HashMap<String, String> labelsMap = new HashMap<String, String>();
+    
+
+	ByteArrayOutputStream file2 = new ByteArrayOutputStream();
+	FileOutputStream out = null;
    
 	Slot rdfsLabel;
     public ProtegeOWLTreeGenerator() {
-    	g = new Tree();
-    	g.addColumn("label", String.class);
-    	
-		//g.addColumn("owlClass", Cls.class);
-    	hm = new HashMap<String,Cls>();
+
+    	try {
+			out = new FileOutputStream("etc/NIF-tree.xml");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     
     public void createOWLGraph() {
-            
         	loadOntology();
-            
-        	/*
-            Node root = this.getGraph().addNode();
-            root.set("label", "root");
-            for (Iterator it = this.getGraph().nodes(); it.hasNext();) {
-            	Node n = (Node)it.next();
-            	if (this.getGraph().getInDegree(n) < 1) {
-            		if (!"root".equals(n.get("label"))) {
-            			this.getGraph().addEdge(root, n);
-            		}
-            	}
-            }*/
-        	
-        	System.out.println(g.isValidTree());
-
     }
     
     private void loadOntology() {
@@ -109,36 +99,40 @@ public class ProtegeOWLTreeGenerator {
     			Cls root = owlModel.getRootCls();
     			Cls entity = owlModel.getCls("bfo:Entity");
     			System.out.println("The root class is: " + entity.getName());
-    			Node rootNode = getTree().addRoot();
+
     			Slot rdfsLabel = owlModel.getSlot("rdfs:label");
     			String label = (String)entity.getDirectOwnSlotValue(rdfsLabel);
     			String prefix = owlModel.getPrefixForResourceName(entity.getName());
     			if (prefix != null) {
     				label =  prefix + ":" + label;
     			}
-    			rootNode.setString("label", label);
-    			hm.put(label, entity);
-    			
-    			FileOutputStream file2 = null;
-    			try {
-    				file2 = new FileOutputStream("etc/NIF-tree.xml");
-    			} catch (FileNotFoundException e) {
-    				// TODO Auto-generated catch block
-    				e.printStackTrace();
-    			}
-    	    	
+  
     	    	PrintStream s = new PrintStream(file2);
-    	    	s.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
-    	    	s.println("<tree>");
-    	    	//s.println("<!DOCTYPE tree SYSTEM \"treeml.dtd\"><!DOCTYPE tree SYSTEM \"treeml.dtd\">");
-    	    	s.println("<declarations><attributeDecl name=\"label\" type=\"String\"/></declarations>");
+    			writeOut("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+    			writeOut("<tree>\n");
+    	    	    	    	
+    	    	loadClassIntoTreeMLWithGUI(owlModel, file2, out);
     	    	
-    	    	loadClassIntoTreeMLWithGUI(owlModel, s);
 
+    			file2.writeTo(out);
+    	    	file2.flush();
+    	    	file2.close();
+    	    	out.flush();
+    	    	out.close();
     		}
     	} catch (Exception e) {
     		e.printStackTrace();
     	}	
+    }
+    
+    private void writeOut(String s) {
+    	
+		try {
+			file2.write(s.getBytes("UTF-8"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     
     /* Writes TreeML to disk as processing.
@@ -147,7 +141,7 @@ public class ProtegeOWLTreeGenerator {
      * The fact that Cls's are in LinkedLists allows the grouping of siblings and the 
      * correct placement of </branch> markers.
      */
-    private void loadClassIntoTreeMLWithGUI(JenaOWLModel owlModel, PrintStream s) {
+    private void loadClassIntoTreeMLWithGUI(JenaOWLModel owlModel, ByteArrayOutputStream file2, FileOutputStream out) {
 
     	//use the protege GUI class, AssertedSubsumptionTreePanel, to access the
     	//class hierarchy of this owlModel
@@ -166,14 +160,16 @@ public class ProtegeOWLTreeGenerator {
     	while(firstLevel.hasMoreElements()) {
     		SubsumptionTreeNode next = (SubsumptionTreeNode)firstLevel.nextElement();
     		 //how to get the label for this node
-			label = (String)next.getCls().getDirectOwnSlotValue(rdfsLabel);
-			prefix = owlModel.getPrefixForResourceName(next.getCls().getName());
-			if (prefix != null) {
-				label =  prefix + ":" + label;
-			}
-			if ("bfo:entity".equals(label)) {
-				entity = next;
-			}
+
+    		label = (String)next.getCls().getDirectOwnSlotValue(rdfsLabel);
+    		prefix = owlModel.getPrefixForResourceName(next.getCls().getName());
+    		if (prefix != null) {
+    			label =  prefix + ":" + label;
+    		}
+    		if ("bfo:entity".equals(label)) {
+    			entity = next;
+    		}
+
     	}
     	//verify that we found it, if not, quit.
     	if (entity == null) {
@@ -231,11 +227,47 @@ public class ProtegeOWLTreeGenerator {
 			//we are handling a class...add it to the sum
 			handledClasses++;
 						
+			//get the id for this node
+			String[] slotParts = n.getCls().getName().split(":");
+			String id = n.getCls().getName();
+			if (slotParts.length > 1)
+				id = slotParts[1];
+			
             //get the label and prefix for this node
 			label = (String)n.getCls().getDirectOwnSlotValue(rdfsLabel);
-			//if no label, skip this guy
-			if (label == null) continue;
+			
+			//if no label, skip this guy, because most likely it is
+			//an anonymous class that we don't care about anyway.
+			if (label == null) {
+				//System.out.println("id " + id + " has no label");
+				skippedForNoLabel++;
+				skippedClasses++;
+				continue;
+			}
+			//clean up the string for the label
 			label = cleanString(label);
+			
+			String duplicateId = null;
+			//search for duplicates, and if found, add id
+			if (labelsMap.get(label.toLowerCase()) == null) {
+				labelsMap.put(label.toLowerCase(), id);
+			} else {
+				duplicateId = labelsMap.get(label.toLowerCase());
+				label += " (" + id + ")";
+				System.out.println("duplicate label! Fixed version:" + label);
+			}
+			
+			//OK, WE ARE SATISFIED THAT WE SHOULD START WRITING ABOUT THIS CLASS!
+			
+			writeOut("<leaf>\n");
+			
+			//write the label out
+			writeOut("<attribute name=\"label\" value=\"" + label + "\"/>\n");
+			
+			if (duplicateId != null) {
+				//write the duplicate Id out if applicable
+				writeOut("<attribute name=\"duplicateId\" value=\"" + duplicateId + "\"/>\n");
+			}
 			
 			//HANDLE PARENT LABELS
 			//get the label for the super class of this class
@@ -249,50 +281,34 @@ public class ProtegeOWLTreeGenerator {
 				if (parentLabel != null) {
 					break;
 				}
-			} 
-			
+			}
+						
 			if (parentLabel == null) {
 				System.out.println("No parent for class " + label);
 			} else {
-				//if the parent label is the same as the label, skip this class.
-				//don't render items that have the same parent label as itself
-				//need to investigate why these exist (NIF-molecule)
+				//if the parent label is the same as the label, make a new
+				//label that includes the id
 				if (parentLabel.equals(label)){
-					skippedClasses++;
-					continue;
+					System.out.println("label same as parent: " 
+							+ label + ", " + parentLabel);
+					label += " (" + id + ")";
 				}
 			}
 
-			//OK, WE ARE SATISFIED THAT WE SHOULD START WRITING ABOUT THIS CLASS!
-			
-			//open leaf tag if leaf, branch tag if tag
-			if (n.isLeaf()) {
-				s.println("<leaf>");
-			} else {
-				s.println("<branch>");
-			}
-			//write the label out
-			s.println("<attribute name=\"label\" value=\"" + label + "\"/>");
-			
 			//write the parent out
 
 			if (parentLabel != null) {
 				parentLabel = cleanString(parentLabel);
-				s.println("<attribute name=\"parent\" value=\"" + parentLabel + "\"/>");
+				writeOut("<attribute name=\"parent\" value=\"" + parentLabel + "\"/>\n");
 			}
 			
 			prefix = owlModel.getPrefixForResourceName(n.getCls().getName());
 			if (prefix != null) {
-				s.println("<attribute name=\"prefix\" value=\"" + prefix + "\"/>");
+				writeOut("<attribute name=\"prefix\" value=\"" + prefix + "\"/>\n");
 			}
 			
-			//get the id for this node
-			String[] slotParts = n.getCls().getName().split(":");
-			String slotValue2 = n.getCls().getName();
-			if (slotParts.length > 1)
-				slotValue2 = slotParts[1];
-
-			s.println("<attribute name=\"id\" value=\"" + slotValue2 + "\"/>");
+			//write out id
+			writeOut("<attribute name=\"id\" value=\"" + id + "\"/>\n");
 			
 			//print out names and values of other slots that might be there
 			for (Slot slot : slots) {
@@ -307,17 +323,16 @@ public class ProtegeOWLTreeGenerator {
 					for (String slotValue : slotValues) {
 						slotValue = cleanString(slotValue);
 
-						s.println("<attribute name=\""+ slot.getName() + 
-								"\" value=\"" + slotValue + "\"/>");
+						writeOut("<attribute name=\""+ slot.getName() + 
+								"\" value=\"" + slotValue + "\"/>\n");
 					}
 				}
 				slotValues.clear();
 			}
 			
 			//close leaf tag if leaf.  We handle closing branch tags down below
-			if (n.isLeaf()) {
-				s.println("</leaf>");	
-			}
+			
+			writeOut("</leaf>\n");	
 
 			//get the children for this node
 			Enumeration subclasses = n.children();
@@ -338,28 +353,14 @@ public class ProtegeOWLTreeGenerator {
 				ancestorMap.put(next, ancestorList);
 				
 			}
-			s.flush();
 			
 			testSet.clear();
 			//for all the nodes in the queue, add all their ancestors into testSet
 			for (SubsumptionTreeNode t : q) {
 				testSet.addAll(ancestorMap.get(t));
 			}
-			/* If I have a unique ancestors compared to the rest of the nodes
-			 * left in the queue, then I need to be responsible
-			 * for closing the branch for those ancestors
-			 */
-			for (SubsumptionTreeNode t : ancestorMap.get(n)) {
-				if (!testSet.contains(t)) {
-					s.println("</branch>");	
-				}
-			}
 		}
-		s.println("</tree>");
-    }
-
-    public Tree getTree() {
-    	return g;
+		writeOut("</tree>");
     }
    
     protected String cleanString(String s) {
@@ -372,6 +373,9 @@ public class ProtegeOWLTreeGenerator {
     		s = s.replaceAll("\'", "&apos;");
     		s = s.replaceAll("\\[", "(");
     		s = s.replaceAll("\\]", ")");
+    		s = s.replaceAll("<", "&lt;");
+    		s = s.replaceAll(">", "&gt;");
+    		
 			return new String(s.getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
@@ -387,5 +391,6 @@ public class ProtegeOWLTreeGenerator {
     	System.out.println("Ontology loading completed.");
     	System.out.println("Loaded " + potg.handledClasses + " classes");
     	System.out.println("Skipped " + potg.skippedClasses + " classes");
+    	System.out.println("No label skips: " + potg.skippedClasses + " classes");
     }
 }
