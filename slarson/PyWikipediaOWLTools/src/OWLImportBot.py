@@ -317,7 +317,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
     def clearVars(self):
         self.label = ""
         self.parent = list()
-        self.id = list)(
+        self.id = list()
         self.duplicateId = list()
         self.bamsID = list()
         self.bonfireID = list()
