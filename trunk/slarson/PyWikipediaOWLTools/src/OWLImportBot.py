@@ -125,7 +125,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
 
     def writeRedirectIdPage(self):
    
-        p = wikipedia.Page(self.ow, "" +self.id)
+        p = wikipedia.Page(self.ow, self.id[0])
         h = ""
         
         for item in self.id:
