@@ -46,6 +46,7 @@ public class ProtegeOWLTreeGenerator {
     private int skippedForNoLabel = 0;
     private int handledClasses = 0;
     private HashMap<String, String> labelsMap = new HashMap<String, String>();
+    private HashMap<String, String> labelsReverseMap = new HashMap<String, String>();
     
 
 	ByteArrayOutputStream file2 = new ByteArrayOutputStream();
@@ -83,7 +84,8 @@ public class ProtegeOWLTreeGenerator {
 			
 			/* load from web */
 			//JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://purl.org/nbirn/birnlex/ontology/BIRNLex-Anatomy.owl");
-    		JenaOWLModel owlModel = ProtegeOWL.createJenaOWLModelFromURI("http://ontology.neuinfo.org/NIF/nif.owl");
+    		JenaOWLModel owlModel = 
+    			ProtegeOWL.createJenaOWLModelFromURI("http://ontology.neuinfo.org/NIF/nif.owl");
 			
 			/* load from disk strategy: */
 			//ProjectManager projectManager = ProjectManager.getProjectManager();
@@ -224,8 +226,7 @@ public class ProtegeOWLTreeGenerator {
 			//get a node
 			SubsumptionTreeNode n = q.pop();
 			
-			//we are handling a class...add it to the sum
-			handledClasses++;
+			
 						
 			//get the id for this node
 			String[] slotParts = n.getCls().getName().split(":");
@@ -251,12 +252,58 @@ public class ProtegeOWLTreeGenerator {
 			//search for duplicates, and if found, add id
 			if (labelsMap.get(label.toLowerCase()) == null) {
 				labelsMap.put(label.toLowerCase(), id);
+				labelsReverseMap.put(id, label.toLowerCase());
 			} else {
 				duplicateId = labelsMap.get(label.toLowerCase());
 				label += " (" + id + ")";
+				String newLabel = label;
+				//because we have changed the label, update the map we will
+				//use to lookup parent labels via their ids
+				labelsReverseMap.put(id, newLabel);
 				System.out.println("duplicate label! Fixed version:" + label);
 			}
 			
+			//HANDLE PARENT LABELS
+			//get the label for the super class of this class
+			String parentLabel = null;
+			Collection sc = n.getCls().getDirectSuperclasses();
+			ArrayList list = new ArrayList();
+			list.addAll(sc);
+			String parentId = null;
+			for (int i = 0; i < n.getCls().getDirectSuperclassCount(); i++) {
+				Cls superclass = (Cls)list.get(i);
+				//get the id for this node
+				String[] slotParts2 = superclass.getName().split(":");
+				parentId = superclass.getName();
+				
+				if (slotParts2.length > 1)
+					parentId = slotParts2[1];
+				
+				//this is only a temporary parent label assignment\
+				//just needed to make sure this is not an anonymous class
+				parentLabel = (String)superclass.getDirectOwnSlotValue(rdfsLabel);
+				if (parentLabel != null) {
+					break;
+				}
+			}
+						
+			if (parentLabel == null) {
+				System.out.println("No parent for class " + label);
+			} else {
+				//use the reverse map because we have augmented some 
+				//names with their ids and we want to be 
+				//pointing to the correct parent label.
+				parentLabel = labelsReverseMap.get(parentId);
+				
+				if (parentLabel == null) {
+					System.out.println("No parent label? " + parentId);
+					skippedClasses++;
+					continue;
+				}
+			}
+
+			//we are handling a class...add it to the sum
+			handledClasses++;
 			//OK, WE ARE SATISFIED THAT WE SHOULD START WRITING ABOUT THIS CLASS!
 			
 			writeOut("<leaf>\n");
@@ -268,33 +315,6 @@ public class ProtegeOWLTreeGenerator {
 				//write the duplicate Id out if applicable
 				writeOut("<attribute name=\"duplicateId\" value=\"" + duplicateId + "\"/>\n");
 			}
-			
-			//HANDLE PARENT LABELS
-			//get the label for the super class of this class
-			String parentLabel = null;
-			Collection sc = n.getCls().getDirectSuperclasses();
-			ArrayList list = new ArrayList();
-			list.addAll(sc);
-			for (int i = 0; i < n.getCls().getDirectSuperclassCount(); i++) {
-				Cls superclass = (Cls)list.get(i);
-				parentLabel = (String)superclass.getDirectOwnSlotValue(rdfsLabel);
-				if (parentLabel != null) {
-					break;
-				}
-			}
-						
-			if (parentLabel == null) {
-				System.out.println("No parent for class " + label);
-			} else {
-				//if the parent label is the same as the label, make a new
-				//label that includes the id
-				if (parentLabel.equals(label)){
-					System.out.println("label same as parent: " 
-							+ label + ", " + parentLabel);
-					label += " (" + id + ")";
-				}
-			}
-
 			//write the parent out
 
 			if (parentLabel != null) {
