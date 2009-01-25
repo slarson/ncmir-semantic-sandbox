@@ -232,7 +232,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
 
         for item in self.duplicateId:
             h += "\n\n==Duplicates=="
-            h += "\n\n* This item is duplicated with: [" + item + "]"
+            h += "\n\n* This item has the same label as: [[sameAs::" + item + "]]"
 
 	h += "\n\n==Query for more information=="
 	queryString = self.label.replace(" ", "%20")
