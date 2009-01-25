@@ -30,6 +30,8 @@ class WriteWikipediaFromTreeML(ContentHandler):
         self.ow = wikipedia.Site('en', 'nif')
         login.LoginManager('bot', 'NifBot', self.ow)
 
+	self.ow.put_throttle.setDelay(3, absolute = True)
+
 	print "\nLogged in to Neurolex.org.  Ready to start updating!"
 
         self.unchanged = list()
