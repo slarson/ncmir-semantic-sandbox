@@ -134,12 +134,12 @@ class WriteWikipediaFromTreeML(ContentHandler):
             h += "#REDIRECT [[:Category:" + self.label + "]]"
 
         if p.exists() :
-            existingText = p.get()
-            if h.strip() == existingText.strip():
-                print "Nothing to do!  Skipped page for ", self.label
-            else:
-		p.put(h, "updated by NifBot2")
-                print "updated page for ", self.label
+            #existingText = p.get()
+            #if h.strip() == existingText.strip():
+            #    print "Nothing to do!  Skipped page for ", self.label
+            #else:
+            p.put(h, "updated by NifBot2")
+            print "updated page for ", self.label
         else:
             p.put(h, "added by NifBot2")
             print "created page for ", self.label
@@ -242,7 +242,11 @@ class WriteWikipediaFromTreeML(ContentHandler):
 	h += "\n[http://nif-apps-stage.neuinfo.org/search?query=%22" + queryString + "%22 Click here to find more about " + self.label.replace("_", " ") + "]"
 
         if p.exists() :
-            existingText = p.get()
+            try:
+                existingText = p.get()
+            except wikipedia.IsRedirectPage:
+                print "strange, got a redirect page error here"
+                return
             if h.strip() == existingText.strip():
                 print "Nothing to do!  Skipped page for ", self.label
             else:
@@ -258,7 +262,12 @@ class WriteWikipediaFromTreeML(ContentHandler):
     	currentRevision = p.get()
 
         print "********Current Version of ", p.title()
-        print currentRevision.strip()
+        try:
+            print currentRevision.strip()
+        except UnicodeEncodeError:
+            print "unicode issue.. couldn't output"
+            print "ERROR..let's skip this one for now"
+            return
 
 	lastNifBotRevision = ''
 
@@ -275,6 +284,7 @@ class WriteWikipediaFromTreeML(ContentHandler):
 
 	#write out the newest version, the last NifBot version, and the new version
 	# to the file system
+        
 	FILE1 = open("lastNifBotRevision.txt", "w")
 	FILE1.writelines(lastNifBotRevision)
 	FILE1.close()
