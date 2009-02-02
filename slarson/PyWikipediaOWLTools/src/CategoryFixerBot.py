@@ -18,8 +18,8 @@ def findCapsVersion(allCapsVersion):
 
     words = allCapsVersion.split()
     if len(words) > 2:
-        words[0] = words[0].capitalize()
-        words[1] = words[1].capitalize()
+        words[0] = words[0][0:-2] + words[0][-2:-1].upper()
+        words[1] = words[1].lower()
 
     for i in range(2,len(words)):
         words[i] = words[i].lower()
