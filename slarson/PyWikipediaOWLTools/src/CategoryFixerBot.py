@@ -8,14 +8,18 @@ sys.path.append("families")
 
 import wikipedia, login, string, category
 
-def findCapsVersion(allCapsVersion):
-    if testPageExistance(allCapsVersion):
-        return allCapsVersion
+# This script runs through a list of category names
+# and tries to fix those names that have been
+# improperly set to the lowercased version.
+# Uses pywikipediabot to fix the affected pages
+# author: Stephen D. Larson (slarson@ncmir.ucsd.edu
 
+def findCapsVersion(allCapsVersion):
 
     words = allCapsVersion.split()
-    words[0] = words[0].upper()
+    words[0] = words[0][0:-1] + words[0][-1].upper()
     words[1] = words[1].lower()
+    
 
     newVersion = ""
     for word in words:
