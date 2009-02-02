@@ -36,8 +36,8 @@ def testPageExistance(capsVersion):
     return p.exists()
 
 def moveCategory(capsVersion):
-    category.CategoryMoveRobot(capsVersion.lower(), capsVersion, editSummary='replaced category with appropriately named category')
-    
+    catMove = category.CategoryMoveRobot(capsVersion.lower(), capsVersion, editSummary='replaced category with appropriately named category')
+    catMove.run()
 
 ow = wikipedia.Site('en', 'nif')
 login.LoginManager('bot', 'NifBot', ow)
