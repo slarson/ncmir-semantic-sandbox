@@ -17,7 +17,7 @@ import wikipedia, login, string, category
 def findCapsVersion(allCapsVersion):
 
     words = allCapsVersion.split()
-    if words > 6:
+    if len(words) > 6:
         words[0] = words[0].upper()
         words[1] = words[1].upper()
         words[2] = words[2].upper()
