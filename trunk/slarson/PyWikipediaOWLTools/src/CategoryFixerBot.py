@@ -18,9 +18,9 @@ def findCapsVersion(allCapsVersion):
 
     words = allCapsVersion.split()
     if len(words) > 5:
-        words[0] = words[0].upper()
-        words[1] = words[1].upper()
-        words[2] = words[2].upper()
+        words[0] = words[0].capitalize()
+        words[1] = words[1].capitalize()
+        words[2] = words[2].capitalize()
         words[3] = words[3].lower()
         words[4] = words[4].lower()
         words[5] = words[5].lower()
