@@ -61,7 +61,7 @@ for fileLine in fileList:
 
     if capsVersion:
         print "found ", capsVersion
-        moveCategory(capsVersion)
+        moveCategory(capsVersion.rstrip())
     else:
         print "Did not find appropriate caps version ", origCapsVersion
         
