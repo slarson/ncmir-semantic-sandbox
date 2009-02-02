@@ -17,11 +17,54 @@ import wikipedia, login, string, category
 def findCapsVersion(allCapsVersion):
 
     words = allCapsVersion.split()
+    hasDash = words[0].find("-")
+    if hasDash:
+        words[0] = words[0][0:hasDash+1] + words[0][hasDash+1].upper() + words[0][hasDash+1:]
+
+    newVersion = ""
+    for word in words:
+        newVersion += word + " "
+    
+    newVersion = newVersion.rstrip()
+    
+    if testPageExistance(newVersion):
+        return newVersion
+
+
+    words = allCapsVersion.split()
+    words[0] = words[0].upper()
+
+    newVersion = ""
+    for word in words:
+        newVersion += word + " "
+    
+    newVersion = newVersion.rstrip()
+    
+    if testPageExistance(newVersion):
+        return newVersion
+
+    words = allCapsVersion.split()
     if len(words) > 2:
+        words[0] = words[0][0:-4] + words[0][-4:].upper()
+        words[1] = words[1].lower()
+
+    for i in range(2,len(words)):
+        words[i] = words[i].lower()
+
+    newVersion = ""
+    for word in words:
+        newVersion += word + " "
+    
+    newVersion = newVersion.rstrip()
+    
+    if testPageExistance(newVersion):
+        return newVersion
+
+    words = allCapsVersion.split()
+    if len(words) > 1:
         words[0] = words[0][0:-2] + words[0][-2:].upper()
-        words[1] = words[1].lower()
 
-    for i in range(2,len(words)):
+    for i in range(1,len(words)):
         words[i] = words[i].lower()
 
     newVersion = ""
@@ -34,11 +77,10 @@ def findCapsVersion(allCapsVersion):
         return newVersion
 
     words = allCapsVersion.split()
-    if len(words) > 2:
+    if len(words) > 1:
         words[0] = words[0][0:-3] + words[0][-3:].upper()
-        words[1] = words[1].lower()
 
-    for i in range(2,len(words)):
+    for i in range(1,len(words)):
         words[i] = words[i].lower()
 
     newVersion = ""
@@ -49,23 +91,6 @@ def findCapsVersion(allCapsVersion):
     
     if testPageExistance(newVersion):
         return newVersion
-
-    words = allCapsVersion.split()
-    if len(words) > 2:
-        words[1] = words[1].upper()
-
-    for i in range(2,len(words)):
-        words[i] = words[i].lower()
-
-    newVersion = ""
-    for word in words:
-        newVersion += word + " "
-    
-    newVersion = newVersion.rstrip()
-    
-    if testPageExistance(newVersion):
-        return newVersion
-
 
     return False
         
