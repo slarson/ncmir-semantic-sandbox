@@ -18,7 +18,7 @@ def findCapsVersion(allCapsVersion):
 
     words = allCapsVersion.split()
     if len(words) > 2:
-        words[0] = words[0][0:-2] + words[0][-2:-1].upper()
+        words[0] = words[0][0:-2] + words[0][-2:].upper()
         words[1] = words[1].lower()
 
     for i in range(2,len(words)):
@@ -32,6 +32,40 @@ def findCapsVersion(allCapsVersion):
     
     if testPageExistance(newVersion):
         return newVersion
+
+    words = allCapsVersion.split()
+    if len(words) > 2:
+        words[0] = words[0][0:-3] + words[0][-3:].upper()
+        words[1] = words[1].lower()
+
+    for i in range(2,len(words)):
+        words[i] = words[i].lower()
+
+    newVersion = ""
+    for word in words:
+        newVersion += word + " "
+    
+    newVersion = newVersion.rstrip()
+    
+    if testPageExistance(newVersion):
+        return newVersion
+
+    words = allCapsVersion.split()
+    if len(words) > 2:
+        words[1] = words[1].lupper()
+
+    for i in range(2,len(words)):
+        words[i] = words[i].lower()
+
+    newVersion = ""
+    for word in words:
+        newVersion += word + " "
+    
+    newVersion = newVersion.rstrip()
+    
+    if testPageExistance(newVersion):
+        return newVersion
+
 
     return False
         
