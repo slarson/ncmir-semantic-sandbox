@@ -6,6 +6,9 @@ sys.path.append("../../pywikipedia/families")
 sys.path.append("families")
 
 import wikipedia, login, category, string
+import urllib2
+
+from BeautifulSoup import BeautifulStoneSoup
 
 ###########################
 # Crawls the Neurolex pages 
@@ -21,8 +24,15 @@ import wikipedia, login, category, string
 #Note: need to figure out how to deal with unrecognized lines
 
 
-def processOldText(text):
-    return text
+def processOldText(pagename):
+    xml = urllib2.urlopen("http://neurolex.org/wiki/Special:ExportRDF/:"+pagename)
+    #soup = BeautifulStoneSoup(xml, convertEntities=BeautifulStoneSoup.XML_ENTITIES)
+    soup = BeautifulStoneSoup(xml)
+	
+    externallysourceddefinition = soup.find("owl:class").find("property:externallysourceddefinition")
+    if externallysourceddefinition:
+        return externallysourceddefinition.prettify()
+    return soup.find("owl:class").prettify()
 
 def writeChanges(p):
     if p.exists() :
@@ -73,9 +83,9 @@ def main():
             wikipedia.output(u"Some error, skipping..")
             continue     
 	
-	newText = processOldText(text)
+	newtext = processOldText(pagename)
 
-        wikipedia.output(newText) # Print the output, encoding it with wikipedia's method
+        wikipedia.output(newtext) # Print the output, encoding it with wikipedia's method
  
 if __name__ == '__main__':
     try:
