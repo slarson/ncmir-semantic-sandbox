@@ -42,12 +42,6 @@ for fileLine in fileList:
     # and leave out the last two
     words = words[1:-2]
 
-    # if there is only one word, skip
-    # since we only have a problem with multi-word
-    # categories
-    if (len(words) < 2):
-        continue
-
     # capitalize each word in the string, while
     # keeping track of the uncapitalized version
     outStringCaps = ""
