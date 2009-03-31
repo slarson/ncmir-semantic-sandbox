@@ -25,13 +25,22 @@ from BeautifulSoup import BeautifulStoneSoup
 
 
 def processOldText(pagename):
+    # grab RDF from NeuroLex
     xml = urllib2.urlopen("http://neurolex.org/wiki/Special:ExportRDF/:"+pagename)
+
+    # parse the XML
     #soup = BeautifulStoneSoup(xml, convertEntities=BeautifulStoneSoup.XML_ENTITIES)
     soup = BeautifulStoneSoup(xml)
-	
+
+    # grab elements out of the parsed XML
     externallysourceddefinition = soup.find("owl:class").find("property:externallysourceddefinition")
     if externallysourceddefinition:
         return externallysourceddefinition.prettify()
+
+    # eventually...
+    # rewrite the grabbed elements as members of a template.
+    #
+
     return soup.find("owl:class").prettify()
 
 def writeChanges(p):
